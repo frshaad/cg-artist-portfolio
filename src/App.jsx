@@ -1,11 +1,15 @@
-function App() {
-  const [count, setCount] = useState(0)
+import { Route, Routes } from 'react-router-dom'
+import { DarkModeProvider } from './contexts/DarkMode'
+import { Home } from './pages/Home'
+import { Projects } from './pages/Projects'
 
+export const App = () => {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <DarkModeProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+    </DarkModeProvider>
   )
 }
-
-export default App
