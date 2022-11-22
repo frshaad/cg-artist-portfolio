@@ -33,8 +33,7 @@ export const ShowcaseHeader = () => {
       <div className='flex items-center justify-center gap-6'>
         <a
           href='#contact'
-          // className=' rounded-full border-2 border-gray-800 py-2 px-5 font-semibold transition hover:bg-gray-800 hover:text-gray-50 dark:border-gray-50 dark:text-gray-50 dark:hover:bg-gray-50  dark:hover:text-gray-800 '
-          className='py-2 px-5 font-semibold uppercase transition hover:bg-gray-800 hover:text-gray-50 dark:border-gray-50 dark:text-gray-50 dark:hover:bg-gray-50  dark:hover:text-gray-800 '
+          className='py-2 px-5 font-semibold uppercase transition hover:bg-gray-800 hover:text-gray-50  dark:text-gray-50 dark:hover:bg-gray-50  dark:hover:text-gray-800 '
         >
           Contact
         </a>
