@@ -7,7 +7,7 @@ export const ShowcaseServices = () => {
 
       <ul>
         {services.map((service, index) => (
-          <li className='text-lg font-normal text-gray-200' key={index}>
+          <li className='mb-2 text-lg font-normal text-gray-200' key={index}>
             {service}
           </li>
         ))}
