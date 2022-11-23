@@ -6,6 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       display: ['Ubuntu', 'sans-serif'],
+      sliderNum: ['"Fira Mono"', 'monospace'],
     },
   },
   plugins: [],

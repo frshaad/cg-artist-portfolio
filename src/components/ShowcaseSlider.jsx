@@ -27,10 +27,17 @@ export const ShowcaseSlider = () => {
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
         }}
       >
-        <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.5)] px-8 py-8 text-gray-50'>
+        <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.7)] px-8 py-8 text-gray-50'>
           <div className='flex flex-col justify-between text-left'>
-            <p className='text-5xl font-semibold'>
-              {showcaseProjects[activeProject].id}
+            <p>
+              <span className='font-sliderNum text-5xl font-semibold'>
+                {showcaseProjects[activeProject].id}
+              </span>
+              <span className='text-5xl font-normal'>/</span>
+              <span className='font-sliderNum text-3xl font-normal'>
+                {showcaseProjects.length < 9 ? '0' : ''}
+                {showcaseProjects.length}
+              </span>
             </p>
             <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-2 text-xl font-medium capitalize text-gray-900 shadow-2xl hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
               see project
@@ -38,10 +45,10 @@ export const ShowcaseSlider = () => {
           </div>
 
           <div className=' text-right'>
-            <p className='pb-5 text-xl font-medium text-white'>
+            <p className='pb-5 text-2xl font-medium text-white'>
               {showcaseProjects[activeProject].name}
             </p>
-            <p className='text-base text-gray-100'>
+            <p className='mb-1 text-base text-gray-100'>
               {showcaseProjects[activeProject].location}
             </p>
             <p className='pb-10 text-base text-gray-100'>

@@ -8,7 +8,7 @@ export const ShowcaseInfo = () => {
       </p>
       <div className='z-10 flex flex-col items-center justify-center gap-3'>
         <p className='relative -left-24 flex select-none items-center font-display text-8xl font-thin capitalize text-gray-900  dark:text-gray-100'>
-          extrud{' '}
+          extrude{' '}
           <Tb3DCubeSphere className='h-24 w-24 stroke-gray-900 stroke-1 transition duration-500 hover:rotate-180 dark:stroke-gray-100' />
         </p>
         <p className='relative left-20 select-none font-display text-8xl font-semibold capitalize text-gray-900 dark:text-gray-100'>
