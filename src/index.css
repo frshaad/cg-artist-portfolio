@@ -5,9 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   transition-duration: 300ms;
 }
+
 button > * {
   transition: none;
 }

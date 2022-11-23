@@ -19,7 +19,7 @@ export const ShowcaseSlider = () => {
   }
 
   return (
-    <div className='h-screen w-1/3 '>
+    <div className='h-screen w-full  lg:mx-auto lg:w-2/3 xl:w-1/3'>
       <div
         key={showcaseProjects[activeProject].index}
         className='flex h-full w-full items-end bg-cover bg-center bg-no-repeat py-10 text-center saturate-50  dark:brightness-90'
@@ -27,8 +27,8 @@ export const ShowcaseSlider = () => {
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
         }}
       >
-        <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.7)] px-8 py-8 text-gray-50'>
-          <div className='flex flex-col justify-between text-left'>
+        <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.7)] p-8 text-gray-50 md:w-11/12 md:px-8 md:py-8'>
+          <div className='flex flex-col justify-between text-left '>
             <p>
               <span className='font-sliderNum text-5xl font-semibold'>
                 {showcaseProjects[activeProject].id}
@@ -39,12 +39,12 @@ export const ShowcaseSlider = () => {
                 {showcaseProjects.length}
               </span>
             </p>
-            <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-2 text-xl font-medium capitalize text-gray-900 shadow-2xl hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
+            <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-3 text-xl font-medium capitalize text-gray-900 shadow-2xl hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
               see project
             </button>
           </div>
 
-          <div className=' text-right'>
+          <div className='text-right'>
             <p className='pb-5 text-2xl font-medium text-white'>
               {showcaseProjects[activeProject].name}
             </p>
@@ -57,60 +57,20 @@ export const ShowcaseSlider = () => {
             <div className='flex items-center justify-end gap-4'>
               <button
                 onClick={prevProject}
-                className='flex h-12 w-12 items-center justify-center rounded-full border-2 border-gray-50 p-3 text-center '
+                className='flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-50 p-3 text-center lg:h-12 lg:w-12 '
               >
-                <FaChevronLeft className=' text-xl' />
+                <FaChevronLeft className='text-xl' />
               </button>
               <button
                 onClick={nextProject}
-                className='flex h-12 w-12 items-center justify-center rounded-full border-2 border-gray-50 bg-gray-50 p-3 text-center text-gray-900 transition hover:bg-transparent hover:text-gray-50'
+                className='flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-50 bg-gray-50 p-3 text-center text-gray-900 transition hover:bg-transparent hover:text-gray-50 lg:h-12 lg:w-12'
               >
-                <FaChevronRight className='text-xl ' />
+                <FaChevronRight className='text-xl' />
               </button>
             </div>
           </div>
         </div>
       </div>
-      {/* {showcaseProjects.map((project, index) => {
-        const { id, name, location, date, image } = project
-
-        return (
-          <div
-            key={index}
-            className='flex h-full w-full items-end bg-cover bg-center bg-no-repeat py-10 text-center saturate-50 dark:brightness-90'
-            style={{ backgroundImage: `url(${image})` }}
-          >
-            <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.5)] px-8 py-8 text-gray-50'>
-              <div className='flex flex-col justify-between text-left'>
-                <p className='text-5xl font-semibold'>{id}</p>
-                <button className='rounded-full bg-gray-50 px-7 py-2 text-xl font-medium capitalize text-gray-900 shadow-2xl '>
-                  see project
-                </button>
-              </div>
-
-              <div className=' text-right'>
-                <p className='pb-5 text-xl font-medium text-white'>{name}</p>
-                <p className='text-base text-gray-100'>{location}</p>
-                <p className='pb-10 text-base text-gray-100'>{date}</p>
-                <div className='flex items-center justify-end gap-4'>
-                  <button
-                    onClick={prevProject}
-                    className='flex h-12 w-12 items-center justify-center rounded-full border-2 border-gray-50 p-3 text-center '
-                  >
-                    <FaChevronLeft className=' text-xl' />
-                  </button>
-                  <button
-                    onClick={nextProject}
-                    className='flex h-12 w-12 items-center justify-center rounded-full border-2 border-gray-50 bg-gray-50 p-3 text-center text-gray-900 transition hover:bg-transparent hover:text-gray-50'
-                  >
-                    <FaChevronRight className='text-xl ' />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      })} */}
     </div>
   )
 }

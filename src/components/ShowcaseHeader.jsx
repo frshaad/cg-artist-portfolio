@@ -24,7 +24,7 @@ export const ShowcaseHeader = () => {
   }
 
   return (
-    <div className='flex items-center justify-between font-sans'>
+    <div className='font-sans flex items-center justify-between px-12 py-8'>
       <p className='cursor-pointer text-lg text-gray-800 dark:text-gray-50'>
         <span className='font-bold'>Mahdi</span>
         <span className='font-extralight'>Bahmani</span>
