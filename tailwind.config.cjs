@@ -4,6 +4,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {},
+    fontFamily: {
+      display: ['Ubuntu', 'sans-serif'],
+      sliderNum: ['"Fira Mono"', 'monospace'],
+    },
   },
   plugins: [],
 }
