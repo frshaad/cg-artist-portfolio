@@ -4,7 +4,7 @@ import { showcaseProjects } from '../data/showcase-projects'
 
 export const ShowcaseSlider = () => {
   const [activeProject, setActiveProject] = useState(0)
-  showcaseProjects[activeProject]
+  // showcaseProjects[activeProject]
 
   const prevProject = () => {
     if (activeProject > 0) {
@@ -21,7 +21,6 @@ export const ShowcaseSlider = () => {
   return (
     <div className='h-screen w-full  lg:mx-auto lg:w-2/3 xl:w-1/3'>
       <div
-        key={showcaseProjects[activeProject].index}
         className='flex h-full w-full items-end bg-cover bg-center bg-no-repeat py-10 text-center saturate-50  dark:brightness-90'
         style={{
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
