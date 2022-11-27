@@ -39,7 +39,7 @@ export const ShowcaseSlider = () => {
                 {showcaseProjects.length}
               </span>
             </p>
-            <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-3 text-xl font-medium capitalize text-gray-900 shadow-2xl hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
+            <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-3 text-xl font-medium capitalize text-gray-900 shadow-md hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
               see project
             </button>
           </div>
