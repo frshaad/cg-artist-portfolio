@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FiArrowRight } from 'react-icons/fi'
 import { showcaseProjects } from '../data/showcase-projects'
 
 export const ShowcaseSlider = () => {
   const [activeProject, setActiveProject] = useState(0)
-  // showcaseProjects[activeProject]
 
   const prevProject = () => {
     if (activeProject > 0) {
@@ -26,44 +26,44 @@ export const ShowcaseSlider = () => {
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
         }}
       >
-        <div className='mx-auto flex w-11/12 justify-between bg-[rgba(0,0,0,.7)] p-8 text-gray-50 md:w-11/12 md:px-8 md:py-8'>
-          <div className='flex flex-col justify-between text-left '>
-            <p>
-              <span className='font-sliderNum text-5xl font-semibold'>
-                {showcaseProjects[activeProject].id}
-              </span>
-              <span className='text-5xl font-normal'>/</span>
-              <span className='font-sliderNum text-3xl font-normal'>
-                {showcaseProjects.length < 9 ? '0' : ''}
-                {showcaseProjects.length}
-              </span>
-            </p>
-            <button className='rounded-full border-2 border-gray-50 bg-gray-50 px-7 py-3 text-xl font-medium capitalize text-gray-900 shadow-md hover:bg-transparent hover:text-gray-50 hover:shadow-none '>
-              see project
-            </button>
+        <div className='mx-auto w-11/12 justify-between rounded-lg bg-[rgba(255,255,255,.5)] p-8 backdrop-blur-md dark:bg-[rgba(0,0,0,.5)] md:w-11/12 md:px-8 md:py-8'>
+          <div className='flex items-start justify-between'>
+            <div className='flex flex-col justify-between text-left text-gray-700 dark:text-gray-200'>
+              <p>
+                <span className='font-sliderNum text-5xl font-semibold'>
+                  {showcaseProjects[activeProject].id}
+                </span>
+                <span className='text-5xl font-normal'>/</span>
+                <span className='font-sliderNum text-3xl font-normal'>
+                  {showcaseProjects.length < 9 ? '0' : ''}
+                  {showcaseProjects.length}
+                </span>
+              </p>
+            </div>
+
+            <div className='text-right'>
+              <p className='mb-4 text-2xl font-bold text-gray-700 dark:text-gray-200'>
+                {showcaseProjects[activeProject].name}
+              </p>
+              <p className='mb text-xl text-gray-600 dark:text-gray-300'>
+                {showcaseProjects[activeProject].location}
+              </p>
+              <p className='pb-10 text-xl text-gray-600 dark:text-gray-300'>
+                {showcaseProjects[activeProject].year}
+              </p>
+            </div>
           </div>
 
-          <div className='text-right'>
-            <p className='pb-5 text-2xl font-medium text-white'>
-              {showcaseProjects[activeProject].name}
-            </p>
-            <p className='mb-1 text-base text-gray-100'>
-              {showcaseProjects[activeProject].location}
-            </p>
-            <p className='pb-10 text-base text-gray-100'>
-              {showcaseProjects[activeProject].date}
-            </p>
+          <div className='flex items-center justify-between'>
+            <button className='primary-btn gap-2 hover:gap-3'>
+              see project <FiArrowRight className='text-lg' />
+            </button>
+
             <div className='flex items-center justify-end gap-4'>
-              <button
-                onClick={prevProject}
-                className='flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-50 p-3 text-center lg:h-12 lg:w-12 '
-              >
+              <button onClick={prevProject} className='arrow-btn'>
                 <FaChevronLeft className='text-xl' />
               </button>
-              <button
-                onClick={nextProject}
-                className='flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-50 bg-gray-50 p-3 text-center text-gray-900 transition hover:bg-transparent hover:text-gray-50 lg:h-12 lg:w-12'
-              >
+              <button onClick={nextProject} className='arrow-btn'>
                 <FaChevronRight className='text-xl' />
               </button>
             </div>

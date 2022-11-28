@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
@@ -5,6 +6,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .blured-glass {
+    @apply rounded-xl bg-[rgba(255,255,255,0.5)] p-8 shadow-2xl backdrop-blur-lg dark:bg-[rgba(0,0,0,0.5)] md:p-10 lg:shadow-2xl hover:lg:scale-[1.01] hover:lg:shadow-2xl;
+  }
+
+  .arrow-btn {
+    @apply flex h-20 w-20 items-center justify-center rounded-full bg-gray-50 text-center shadow-lg hover:scale-[1.03] hover:shadow-xl lg:h-16 lg:w-16;
+  }
+
+  .arrow-btn-icon {
+    @apply text-2xl text-gray-500;
+  }
+
+  .primary-btn {
+    @apply flex items-center rounded-full bg-gray-50 px-7 py-4 text-lg font-medium capitalize text-gray-600 shadow-lg sm:px-10 lg:text-xl;
+  }
+
+  .section-title {
+    @apply text-center font-title text-5xl uppercase text-cyan-800  dark:text-gray-100 lg:text-left;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -14,12 +37,8 @@ html {
   transition-duration: 300ms;
 }
 
-button > * {
-  transition: none;
-}
-
-button > #pdf-btn {
-  transition-duration: 300ms;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ? Start Dark/Light toggle button */

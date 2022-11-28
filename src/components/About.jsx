@@ -9,18 +9,16 @@ export const About = () => {
     <section className='flex w-screen snap-start flex-col-reverse bg-gray-50 dark:bg-black lg:h-screen lg:flex-row'>
       <article className='flex h-screen w-full flex-col lg:w-1/2'>
         <div className='mx-auto w-11/12 py-11 text-gray-900 dark:text-gray-50  lg:h-2/3  lg:p-8 xl:p-14'>
-          <p className='text-center font-title text-6xl uppercase text-cyan-800  dark:text-gray-100 lg:text-left'>
-            skills
-          </p>
+          <p className='section-title'>skills</p>
 
           <ul className='md:justify-[unset] flex flex-wrap items-center justify-center gap-4 py-12 lg:px-10 lg:pt-16 lg:pb-12 2xl:gap-5'>
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className='flex h-12 w-44 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 shadow-md saturate-[0.8] hover:scale-[1.01] hover:bg-[rgba(0,0,0,0.2)] hover:shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
+                className='flex h-12 w-44 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-[0.8] hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
               >
                 <img src={skill.icon} alt='' className='h-auto w-12 p-1' />
-                <p className='cursor-default px-4 text-lg font-light leading-6 text-gray-900 dark:text-gray-300'>
+                <p className='cursor-default px-4 text-base font-normal leading-6 text-gray-800 dark:text-gray-300'>
                   {skill.name}
                 </p>
               </li>
@@ -28,9 +26,9 @@ export const About = () => {
           </ul>
 
           <div className='flex justify-center'>
-            <button className='flex items-center justify-between gap-3 rounded-full bg-gray-50 px-10 py-4 text-lg font-normal capitalize text-gray-800 shadow-md hover:scale-[1.01] hover:shadow-xl dark:bg-gray-600 dark:text-gray-200'>
-              <AiOutlineCloudDownload id='pdf-btn' className='h-6 w-6' />{' '}
-              <span className='font-medium'>Download Resumé</span>
+            <button className='primary-btn gap-3 shadow-none drop-shadow-lg hover:scale-[1.02] hover:drop-shadow-xl'>
+              <AiOutlineCloudDownload className='h-6 w-6' />{' '}
+              <span className='text-base font-medium'>Download Resumé</span>
             </button>
           </div>
         </div>

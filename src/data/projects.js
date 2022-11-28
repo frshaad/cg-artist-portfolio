@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: '01',
-    name: 'lorem ipsum dolor',
+    name: 'sari art museum',
     year: '2020',
     image: '../projects/01.jpg',
     category: 'residential',
