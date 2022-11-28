@@ -4,7 +4,6 @@ import { FiArrowRight } from 'react-icons/fi'
 import { projects } from '../data/projects'
 
 export const Projects = () => {
-  // const arrowIcon = document.querySelector('#arrow-icon')
   const [activeProject, setActiveProject] = useState(0)
 
   const prevProject = () => {
@@ -29,16 +28,16 @@ export const Projects = () => {
 
         <div className='flex items-center justify-between'>
           <div className='blured-glass flex w-full flex-col md:mx-auto md:w-10/12 lg:m-0 lg:w-8/12 lg:shadow-lg xl:w-5/12'>
-            <p className='mb-5 text-gray-500'>
+            <p className='mb-6 flex items-center gap-1 text-gray-500 dark:text-gray-200'>
               <span className='font-sliderNum text-xl font-semibold'>
                 {projects[activeProject].year}
               </span>
-              <span className='text-2xl font-normal'> | </span>
+              <span className='text-2xl font-normal'>|</span>
               <span className='text-lg font-light capitalize tracking-wide'>
                 {projects[activeProject].category}
               </span>
             </p>
-            <p className='mb-3 text-4xl font-bold capitalize text-gray-700 dark:text-gray-200 lg:mb-4 lg:text-5xl'>
+            <p className='mb-3 text-4xl font-bold capitalize text-gray-700 dark:text-gray-200 lg:mb-3 lg:text-5xl'>
               {projects[activeProject].name}
             </p>
             <p className='mb-10 text-xl capitalize text-gray-600 dark:text-gray-200'>

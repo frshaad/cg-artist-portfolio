@@ -25,7 +25,7 @@
   }
 
   .section-title {
-    @apply text-center font-title text-5xl uppercase text-cyan-800  dark:text-gray-100 lg:text-left;
+    @apply text-center font-title text-5xl uppercase text-cyan-800 brightness-150 lg:text-left;
   }
 }
 

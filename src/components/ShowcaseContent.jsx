@@ -9,7 +9,7 @@ export const ShowcaseContent = () => {
       <ShowcaseHeader />
       <ShowcaseInfo />
       <div className='flex flex-col-reverse items-end justify-between md:flex-row'>
-        <ShowcaseServices />
+        {/* <ShowcaseServices /> */}
         <ShowcaseSocial />
       </div>
     </div>

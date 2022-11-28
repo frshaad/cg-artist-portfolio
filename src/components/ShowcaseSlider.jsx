@@ -26,15 +26,15 @@ export const ShowcaseSlider = () => {
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
         }}
       >
-        <div className='mx-auto w-11/12 justify-between rounded-lg bg-[rgba(255,255,255,.5)] p-8 backdrop-blur-md dark:bg-[rgba(0,0,0,.5)] md:w-11/12 md:px-8 md:py-8'>
+        <div className='mx-auto w-11/12 justify-between rounded-lg bg-[rgba(255,255,255,.5)] p-8 shadow-lg backdrop-blur-md hover:scale-[1.01] hover:shadow-2xl dark:bg-[rgba(0,0,0,.5)] md:w-11/12 md:px-8 md:py-8'>
           <div className='flex items-start justify-between'>
             <div className='flex flex-col justify-between text-left text-gray-700 dark:text-gray-200'>
-              <p>
-                <span className='font-sliderNum text-5xl font-semibold'>
+              <p className='flex items-center'>
+                <span className='font-sliderNum text-4xl font-semibold'>
                   {showcaseProjects[activeProject].id}
                 </span>
-                <span className='text-5xl font-normal'>/</span>
-                <span className='font-sliderNum text-3xl font-normal'>
+                <span className='font-sliderNum text-4xl font-normal'>|</span>
+                <span className='font-sliderNum text-4xl font-normal'>
                   {showcaseProjects.length < 9 ? '0' : ''}
                   {showcaseProjects.length}
                 </span>
