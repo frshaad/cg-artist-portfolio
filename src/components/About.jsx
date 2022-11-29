@@ -6,7 +6,7 @@ import { AboutBadges } from './AboutBadges'
 
 export const About = () => {
   return (
-    <section className='flex w-screen snap-start flex-col-reverse bg-gray-50 dark:bg-black lg:h-screen lg:flex-row'>
+    <section className='flex w-screen snap-start flex-col-reverse bg-gray-50  dark:bg-black lg:h-screen lg:flex-row'>
       <article className='flex h-screen w-full flex-col lg:w-1/2'>
         <div className='mx-auto w-11/12 py-11 text-gray-900 dark:text-gray-50  lg:h-2/3  lg:p-8 xl:p-14'>
           <p className='section-title'>skills</p>
@@ -39,22 +39,16 @@ export const About = () => {
               title='experience'
               desc='3 years working'
               icon={<MdWork />}
-              bgColor='#e9ecff'
-              acColor='#9ca7ee'
             />
             <AboutBadges
               title='completed'
               desc='20+ projects'
               icon={<AiOutlineFileDone />}
-              bgColor='#b7dfc6'
-              acColor='#59ae7a'
             />
             <AboutBadges
               title='support'
               desc='prompt response'
               icon={<HiOutlineSupport />}
-              bgColor='#ffe2fc'
-              acColor='#e78dde'
             />
           </ul>
         </div>
