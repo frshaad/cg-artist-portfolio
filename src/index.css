@@ -33,7 +33,7 @@
   }
 
   .message-link {
-    @apply rounded-full  bg-white p-3 drop-shadow-md hover:scale-[1.02] hover:drop-shadow-xl;
+    @apply rounded-full  bg-white p-3 drop-shadow-md hover:scale-[1.02] hover:drop-shadow-xl dark:bg-gray-200;
   }
 
   .hr-line {
@@ -41,7 +41,7 @@
   }
 
   .contact-input {
-    @apply relative w-full rounded-md  border-none border-red-100 bg-white py-3 px-6 text-lg font-normal text-gray-700 shadow-md outline-none placeholder:font-light placeholder:text-gray-400  focus:scale-[1.02] focus:shadow-xl focus:invalid:outline-2;
+    @apply relative w-full rounded-md  border-none bg-white py-3 px-6 text-lg font-normal text-gray-700 shadow-md outline-none placeholder:font-light placeholder:text-gray-400 focus:scale-[1.02] focus:shadow-xl  focus:invalid:outline-2 dark:bg-gray-700 dark:text-gray-200;
   }
 }
 

@@ -53,7 +53,7 @@ export const ContactForm = () => {
       <input
         type='submit'
         value='Send'
-        className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800'
+        className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
       />
     </form>
   )
