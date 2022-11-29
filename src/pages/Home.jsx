@@ -9,7 +9,7 @@ export const Home = () => {
       <Showcase />
       <About />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   )
 }
