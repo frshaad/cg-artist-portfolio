@@ -39,22 +39,16 @@ export const About = () => {
               title='experience'
               desc='3 years working'
               icon={<MdWork />}
-              bgColor='#e9ecff'
-              acColor='#9ca7ee'
             />
             <AboutBadges
               title='completed'
               desc='20+ projects'
               icon={<AiOutlineFileDone />}
-              bgColor='#b7dfc6'
-              acColor='#59ae7a'
             />
             <AboutBadges
               title='support'
               desc='prompt response'
               icon={<HiOutlineSupport />}
-              bgColor='#ffe2fc'
-              acColor='#e78dde'
             />
           </ul>
         </div>

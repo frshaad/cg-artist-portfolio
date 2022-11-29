@@ -2,7 +2,7 @@ export const ShowcaseSocial = () => {
   return (
     <div className='mx-auto flex gap-8 p-10 dark:text-gray-50 md:p-12'>
       <a href='https://www.linkedin.com/in/mahdibahmani' target='_blank'>
-        LindedIn
+        LinkedIn
       </a>
       <a href='https://www.instagram.com/rendersbox' target='_blank'>
         Instagram
