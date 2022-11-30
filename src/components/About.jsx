@@ -15,9 +15,9 @@ export const About = () => {
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className='flex h-12 w-44 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-[0.8] hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
+                className='flex h-12 w-44 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-0 hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
               >
-                <img src={skill.icon} alt='' className='h-auto w-12 p-1' />
+                <img src={skill.icon} alt='' className='h-auto w-12 p-1 ' />
                 <p className='cursor-default px-4 text-base font-normal leading-6 text-gray-800 dark:text-gray-300'>
                   {skill.name}
                 </p>
