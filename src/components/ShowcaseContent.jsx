@@ -5,11 +5,11 @@ import { ShowcaseSocial } from './ShowcaseSocial'
 
 export const ShowcaseContent = () => {
   return (
-    <div className='relative flex h-screen w-full  flex-col justify-between xl:w-2/3'>
+    <div className='relative flex h-screen w-full flex-col justify-between p-6 md:p-8 lg:w-7/12'>
       <ShowcaseHeader />
       <ShowcaseInfo />
       <div className='flex flex-col-reverse items-end justify-between md:flex-row'>
-        <ShowcaseServices />
+        {/* <ShowcaseServices /> */}
         <ShowcaseSocial />
       </div>
     </div>

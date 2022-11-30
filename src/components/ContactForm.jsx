@@ -26,7 +26,11 @@ export const ContactForm = () => {
   }
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-6'>
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className='grid grid-cols-1 justify-items-center gap-5'
+    >
       <input
         type='text'
         name='user_name'
