@@ -6,16 +6,16 @@ import { AboutBadges } from './AboutBadges'
 
 export const About = () => {
   return (
-    <section className='flex w-screen snap-start flex-col-reverse bg-gray-50  dark:bg-black lg:h-screen lg:flex-row'>
-      <article className='flex h-screen w-full flex-col lg:w-1/2'>
-        <div className='mx-auto w-11/12 py-11 text-gray-900 dark:text-gray-50  lg:h-2/3  lg:p-8 xl:p-14'>
-          <p className='section-title'>skills</p>
-
-          <ul className='md:justify-[unset] flex flex-wrap items-center justify-center gap-4 py-12 lg:px-10 lg:pt-16 lg:pb-12 2xl:gap-5'>
+    <section className='flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:h-screen lg:snap-start lg:flex-row'>
+      <article className='flex w-full flex-col md:h-screen lg:w-1/2'>
+        <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
+          <p className='section-title mb-12'>skills</p>
+          {/* <ul className='mb-10 flex flex-col items-center justify-center space-y-2 md:flex-row md:flex-wrap md:space-y-4'> */}
+          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2 lg:px-0'>
             {skills.map((skill, index) => (
               <li
                 key={index}
-                className='flex h-12 w-44 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-0 hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
+                className='flex h-12 w-56 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-0 hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
               >
                 <img src={skill.icon} alt='' className='h-auto w-12 p-1 ' />
                 <p className='cursor-default px-4 text-base font-normal leading-6 text-gray-800 dark:text-gray-300'>
@@ -26,15 +26,17 @@ export const About = () => {
           </ul>
 
           <div className='flex justify-center'>
-            <button className='primary-btn gap-3 shadow-none drop-shadow-lg hover:scale-[1.02] hover:drop-shadow-xl'>
+            <button className='primary-btn space-x-2shadow-none drop-shadow-lg hover:scale-[1.02] hover:drop-shadow-xl'>
               <AiOutlineCloudDownload className='h-6 w-6' />{' '}
-              <span className='text-base font-medium'>Download Resumé</span>
+              <span className='ml-2 text-base font-medium '>
+                Download Resumé
+              </span>
             </button>
           </div>
         </div>
 
-        <div className='h-1/3 w-full p-6 text-gray-900 dark:text-gray-50 sm:px-10'>
-          <ul className='mx-auto flex items-center justify-center gap-4 md:w-full'>
+        <div className='w-full p-6 text-gray-900 dark:text-gray-50 sm:px-10'>
+          <ul className='mx-auto grid grid-cols-1 justify-items-center gap-6 md:grid-cols-3 md:gap-2'>
             <AboutBadges
               title='experience'
               desc='3 years working'
@@ -54,16 +56,16 @@ export const About = () => {
         </div>
       </article>
 
-      <article className='flex h-screen flex-col items-center py-12 lg:px-16 lg:py-24 xl:w-1/2'>
-        <div className='flex justify-center'>
+      <article className='flex h-screen flex-col items-center justify-around p-2 md:py-20 lg:w-1/2'>
+        <div className='flex justify-center lg:mb-8'>
           <img
-            className='h-auto max-w-sm'
+            className='h-auto md:max-w-sm'
             src='../images/about-mahdi.png'
             alt='mahdi picture'
           />
         </div>
         <div className='flex justify-center'>
-          <p className='w-4/5 pt-20 text-lg font-light leading-9 dark:text-gray-200'>
+          <p className='w-11/12 text-lg font-light leading-9 dark:text-gray-200 md:w-4/5 lg:w-10/12'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             illum deserunt veniam enim voluptatem dolorem excepturi mollitia
             incidunt quasi vitae exercitationem ex alias nam, dignissimos sed

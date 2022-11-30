@@ -9,11 +9,11 @@
 
 @layer components {
   .blured-glass {
-    @apply rounded-xl bg-[rgba(255,255,255,0.5)] p-8 shadow-2xl backdrop-blur-lg dark:bg-[rgba(0,0,0,0.5)] md:p-10 lg:shadow-2xl hover:lg:scale-[1.01] hover:lg:shadow-2xl;
+    @apply rounded-xl bg-[rgba(255,255,255,0.5)] p-5 shadow-2xl backdrop-blur-lg dark:bg-[rgba(0,0,0,0.5)] md:p-10 hover:md:scale-[1.01] hover:md:shadow-2xl lg:shadow-2xl;
   }
 
   .arrow-btn {
-    @apply flex h-20 w-20 items-center justify-center rounded-full bg-gray-50 text-center shadow-lg hover:scale-[1.03] hover:shadow-xl lg:h-16 lg:w-16;
+    @apply flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 text-center shadow-lg hover:scale-[1.03] hover:shadow-xl md:h-20 md:w-20 lg:h-16 lg:w-16;
   }
 
   .arrow-btn-icon {
@@ -21,7 +21,7 @@
   }
 
   .primary-btn {
-    @apply flex items-center rounded-full bg-gray-50 px-7 py-4 text-lg font-medium capitalize text-gray-600 shadow-lg sm:px-10 lg:text-xl;
+    @apply flex items-center rounded-full bg-gray-50 px-5 py-3 capitalize text-gray-600 shadow-lg  sm:px-10 md:px-8 md:py-5 md:text-lg md:font-medium lg:text-xl;
   }
 
   .section-title {
@@ -29,11 +29,11 @@
   }
 
   .message-icon {
-    @apply h-8 w-8;
+    @apply h-9 w-9;
   }
 
   .message-link {
-    @apply rounded-full  bg-white p-3 drop-shadow-md hover:scale-[1.02] hover:drop-shadow-xl dark:bg-gray-200;
+    @apply rounded-full  bg-white p-3 text-center drop-shadow-md hover:scale-[1.02] hover:drop-shadow-xl dark:bg-gray-200;
   }
 
   .hr-line {
@@ -41,7 +41,7 @@
   }
 
   .contact-input {
-    @apply relative w-full rounded-md  border-none bg-white py-3 px-6 text-lg font-normal text-gray-700 shadow-md outline-none placeholder:font-light placeholder:text-gray-400 focus:scale-[1.02] focus:shadow-xl  focus:invalid:outline-2 dark:bg-gray-700 dark:text-gray-200;
+    @apply relative w-full rounded-md  border-none bg-white py-3 px-6 text-sm font-normal text-gray-700 shadow-md outline-none placeholder:font-light placeholder:text-gray-400 focus:scale-[1.02] focus:shadow-xl focus:invalid:outline-2  dark:bg-gray-700 dark:text-gray-200 md:text-base;
   }
 }
 

@@ -5,7 +5,7 @@ export const AboutBadges = ({ title, desc, icon }) => {
         {title}
       </p>
 
-      <p className='flex flex-1 items-center justify-center rounded-b-md bg-cyan-600 font-medium capitalize text-gray-100 saturate-50'>
+      <p className='flex flex-1 items-center justify-center rounded-b-md bg-cyan-600 text-sm font-medium capitalize text-gray-100 saturate-50 md:text-base'>
         {desc}
       </p>
 

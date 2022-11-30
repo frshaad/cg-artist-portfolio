@@ -1,6 +1,6 @@
 export const ShowcaseSocial = () => {
   return (
-    <div className='mx-auto flex gap-8 p-10 dark:text-gray-50 md:p-12'>
+    <div className='mx-auto flex w-10/12 justify-between pb-10 dark:text-gray-50 md:w-5/12'>
       <a href='https://www.linkedin.com/in/mahdibahmani' target='_blank'>
         LinkedIn
       </a>

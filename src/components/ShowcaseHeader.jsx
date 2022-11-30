@@ -24,16 +24,16 @@ export const ShowcaseHeader = () => {
   }
 
   return (
-    <div className='font-sans flex items-center justify-between px-12 py-8'>
-      <p className='cursor-pointer text-lg text-gray-800 dark:text-gray-50'>
+    <div className='font-sans mb-4 flex items-center justify-between'>
+      <p className='cursor-pointer text-base text-gray-800 dark:text-gray-50 md:text-lg'>
         <span className='font-bold'>Mahdi</span>
         <span className='font-extralight'>Bahmani</span>
       </p>
 
-      <div className='flex items-center justify-center gap-6'>
+      <div className='flex items-center justify-center'>
         <a
           href='#contact'
-          className='py-2 px-5 font-semibold uppercase transition hover:bg-gray-800 hover:text-gray-50  dark:text-gray-50 dark:hover:bg-gray-50  dark:hover:text-gray-800 '
+          className='py-2 px-5 text-base font-semibold uppercase transition dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-800 md:mr-4  md:text-lg md:hover:bg-gray-800  md:hover:text-gray-50 '
         >
           Contact
         </a>
