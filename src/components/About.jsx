@@ -7,11 +7,11 @@ import { AboutBadges } from './AboutBadges'
 export const About = () => {
   return (
     <section className='flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:h-screen lg:snap-start lg:flex-row'>
-      <article className='flex w-full flex-col md:h-screen lg:w-1/2'>
+      <article className='flex w-full flex-col pt-8 md:h-screen md:pt-0 lg:w-1/2'>
         <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
           <p className='section-title mb-12'>skills</p>
           {/* <ul className='mb-10 flex flex-col items-center justify-center space-y-2 md:flex-row md:flex-wrap md:space-y-4'> */}
-          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2 lg:px-0'>
+          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2 lg:px-0 2xl:px-48'>
             {skills.map((skill, index) => (
               <li
                 key={index}
@@ -35,8 +35,8 @@ export const About = () => {
           </div>
         </div>
 
-        <div className='w-full p-6 text-gray-900 dark:text-gray-50 sm:px-10'>
-          <ul className='mx-auto grid grid-cols-1 justify-items-center gap-6 md:grid-cols-3 md:gap-2'>
+        <div className='w-full p-6 text-gray-900 dark:text-gray-50 sm:px-10 2xl:mx-auto 2xl:w-1/2'>
+          <ul className='mx-auto grid grid-cols-1 justify-items-center gap-6 md:grid-cols-3 md:gap-2 '>
             <AboutBadges
               title='experience'
               desc='3 years working'
@@ -64,8 +64,8 @@ export const About = () => {
             alt='mahdi picture'
           />
         </div>
-        <div className='flex justify-center'>
-          <p className='w-11/12 text-lg font-light leading-9 dark:text-gray-200 md:w-4/5 lg:w-10/12'>
+        <div className='flex justify-center py-8 md:py-0'>
+          <p className='w-11/12  text-lg font-light leading-9 dark:text-gray-200 md:w-4/5  lg:w-10/12'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             illum deserunt veniam enim voluptatem dolorem excepturi mollitia
             incidunt quasi vitae exercitationem ex alias nam, dignissimos sed
