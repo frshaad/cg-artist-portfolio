@@ -27,7 +27,7 @@ export const Projects = () => {
         <p className='section-title'>projects</p>
 
         <div className='flex items-center justify-between'>
-          <div className='blured-glass flex w-full flex-col md:mx-auto md:w-10/12 lg:w-8/12 lg:shadow-lg'>
+          <div className='blured-glass flex w-full flex-col md:mx-auto md:w-10/12 lg:w-8/12 lg:shadow-lg 2xl:w-4/12'>
             <p className='mb-6 flex items-center space-x-1 text-gray-500 dark:text-gray-200'>
               <span className='font-sliderNum text-lg font-semibold md:text-xl'>
                 {projects[activeProject].year}

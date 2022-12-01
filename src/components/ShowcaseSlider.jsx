@@ -26,7 +26,7 @@ export const ShowcaseSlider = () => {
           backgroundImage: `url(${showcaseProjects[activeProject].image})`,
         }}
       >
-        <div className='mx-auto w-11/12 justify-between rounded-lg bg-[rgba(255,255,255,.5)] p-4 shadow-lg backdrop-blur-md hover:scale-[1.01] hover:shadow-2xl dark:bg-[rgba(0,0,0,.5)] md:w-8/12 md:p-8 md:px-8 md:py-8 lg:w-11/12'>
+        <div className='mx-auto w-11/12 justify-between rounded-lg bg-[rgba(255,255,255,.5)] p-4 shadow-lg backdrop-blur-md hover:scale-[1.01] hover:shadow-2xl dark:bg-[rgba(0,0,0,.5)] md:w-8/12 md:p-8 md:px-8 md:py-8 lg:w-11/12 2xl:w-7/12'>
           <div className='flex items-start justify-end md:justify-between'>
             <div className='hidden flex-col justify-between text-left text-gray-700 dark:text-gray-200 md:flex'>
               <p className='flex items-center'>
