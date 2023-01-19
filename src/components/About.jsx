@@ -1,12 +1,12 @@
-import { AiOutlineCloudDownload, AiOutlineFileDone } from 'react-icons/ai'
-import { HiOutlineSupport } from 'react-icons/hi'
-import { MdWork } from 'react-icons/md'
-import { skills } from '../data/skills'
-import { AboutBadges } from './AboutBadges'
+import { AiOutlineCloudDownload, AiOutlineFileDone } from "react-icons/ai";
+import { HiOutlineSupport } from "react-icons/hi";
+import { MdWork } from "react-icons/md";
+import { skills } from "../data/skills";
+import { AboutBadges } from "./AboutBadges";
 
 export const About = () => {
   return (
-    <section className='flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:h-screen lg:snap-start lg:flex-row'>
+    <section className='flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:h-screen lg:flex-row'>
       <article className='flex w-full flex-col pt-8 md:h-screen md:pt-0 lg:w-1/2'>
         <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
           <p className='section-title mb-12'>skills</p>
@@ -27,7 +27,7 @@ export const About = () => {
 
           <div className='flex justify-center'>
             <button className='primary-btn space-x-2shadow-none drop-shadow-lg hover:scale-[1.02] hover:drop-shadow-xl'>
-              <AiOutlineCloudDownload className='h-6 w-6' />{' '}
+              <AiOutlineCloudDownload className='h-6 w-6' />{" "}
               <span className='ml-2 text-base font-medium '>
                 Download Resumé
               </span>
@@ -69,7 +69,7 @@ export const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             illum deserunt veniam enim voluptatem dolorem excepturi mollitia
             incidunt quasi vitae exercitationem ex alias nam, dignissimos sed
-            totam neque aperiam voluptas{' '}
+            totam neque aperiam voluptas{" "}
             <a
               href='https://rhizome.ir'
               target='_blank'
@@ -82,5 +82,5 @@ export const About = () => {
         </div>
       </article>
     </section>
-  )
-}
+  );
+};

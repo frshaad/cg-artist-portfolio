@@ -19,7 +19,7 @@ export const Projects = () => {
   }
 
   return (
-    <section className='h-screen w-screen snap-start bg-gray-50 dark:bg-black'>
+    <section className='h-screen w-screen bg-gray-50 dark:bg-black'>
       <article
         className='flex h-full w-full flex-col justify-between bg-cover bg-center bg-no-repeat px-4 py-8 brightness-95 saturate-[0.9] dark:brightness-90 md:py-12 md:px-6 lg:p-16 xl:p-20'
         style={{ backgroundImage: `url(${projects[activeProject].image})` }}
