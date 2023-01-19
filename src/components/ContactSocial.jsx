@@ -1,9 +1,12 @@
-import { BsTelegram, BsWhatsapp } from 'react-icons/bs'
-import { IoMdMail } from 'react-icons/io'
+import { BsTelegram, BsWhatsapp } from "react-icons/bs";
+import { IoMdMail } from "react-icons/io";
 
 export const ContactSocial = () => {
   return (
-    <div className='mx-auto grid grid-cols-3 justify-items-center gap-3 px-8 pt-6 md:w-8/12 xl:w-7/12  '>
+    <div
+      id='social-btns'
+      className='mx-auto grid grid-cols-3 justify-items-center gap-3 px-8 pt-6 md:w-8/12 xl:w-7/12  '
+    >
       <a
         href='https://telegram.me/Mahdi_Bahmani'
         className='message-link hover:text-[#0088cc]'
@@ -23,5 +26,5 @@ export const ContactSocial = () => {
         <IoMdMail className='message-icon h-9 w-9' />
       </a>
     </div>
-  )
-}
+  );
+};
