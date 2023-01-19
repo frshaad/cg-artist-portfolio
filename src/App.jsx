@@ -1,7 +1,7 @@
-import { Route, Routes } from 'react-router-dom'
-import { DarkModeProvider } from './contexts/DarkMode'
-import { Home } from './pages/Home'
-import { Projects } from './pages/Projects'
+import { Route, Routes } from "react-router-dom";
+import { DarkModeProvider } from "./contexts/DarkMode";
+import { Home } from "./pages/Home";
+import { Projects } from "./pages/Projects";
 
 export const App = () => {
   return (
@@ -11,5 +11,5 @@ export const App = () => {
         <Route path='/projects' element={<Projects />} />
       </Routes>
     </DarkModeProvider>
-  )
-}
+  );
+};
