@@ -13,7 +13,7 @@
   }
 
   .arrow-btn {
-    @apply flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 text-center shadow-lg hover:scale-[1.03] hover:shadow-xl md:h-20 md:w-20 lg:h-16 lg:w-16;
+    @apply flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 text-center  shadow-lg drop-shadow-lg hover:scale-[1.03] hover:shadow-xl md:h-20 md:w-20 lg:h-16 lg:w-16;
   }
 
   .arrow-btn-icon {
