@@ -11,7 +11,7 @@ export const About = () => {
         <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
           <p className='section-title mb-12'>skills</p>
           {/* <ul className='mb-10 flex flex-col items-center justify-center space-y-2 md:flex-row md:flex-wrap md:space-y-4'> */}
-          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2 lg:px-0 2xl:px-48'>
+          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2'>
             {skills.map((skill, index) => (
               <li
                 key={index}
@@ -35,7 +35,7 @@ export const About = () => {
           </div>
         </div>
 
-        <div className='w-full p-6 text-gray-900 dark:text-gray-50 sm:px-10 2xl:mx-auto 2xl:w-1/2'>
+        <div className='w-full max-w-2xl p-6 text-gray-900 dark:text-gray-50 sm:px-10 2xl:mx-auto'>
           <ul className='mx-auto grid grid-cols-1 justify-items-center gap-6 md:grid-cols-3 md:gap-2 '>
             <AboutBadges
               title='experience'
