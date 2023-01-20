@@ -6,8 +6,8 @@ import { AboutBadges } from "./AboutBadges";
 
 export const About = () => {
   return (
-    <section className='flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:h-screen lg:flex-row'>
-      <article className='flex w-full flex-col pt-8 md:h-screen md:pt-0 lg:w-1/2'>
+    <section className='mb-16 flex w-full flex-col-reverse bg-gray-50 py-6 dark:bg-black lg:mb-0 lg:flex-row'>
+      <article className='flex w-full flex-col pt-8 md:pt-0 lg:w-1/2'>
         <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
           <p className='section-title mb-12'>skills</p>
           {/* <ul className='mb-10 flex flex-col items-center justify-center space-y-2 md:flex-row md:flex-wrap md:space-y-4'> */}
@@ -56,7 +56,7 @@ export const About = () => {
         </div>
       </article>
 
-      <article className='flex h-screen flex-col items-center justify-around p-2 md:py-20 lg:w-1/2'>
+      <article className='flex flex-col items-center justify-around p-2 lg:h-screen lg:w-1/2 lg:py-20'>
         <div className='flex justify-center lg:mb-8'>
           <img
             className='h-auto md:max-w-sm'
@@ -64,7 +64,7 @@ export const About = () => {
             alt='mahdi picture'
           />
         </div>
-        <div className='flex justify-center py-8 md:py-0'>
+        <div className='flex justify-center py-8 lg:py-0'>
           <p className='w-11/12  text-lg font-light leading-9 dark:text-gray-200 md:w-4/5  lg:w-10/12'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             illum deserunt veniam enim voluptatem dolorem excepturi mollitia
