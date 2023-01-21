@@ -1,29 +1,29 @@
-// import emailjs from '@emailjs/browser'
-import { useRef } from 'react'
-import { BiMailSend } from 'react-icons/bi'
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { BiMailSend } from "react-icons/bi";
 
 export const ContactForm = () => {
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        "mahdi_bahmani",
+        "template_y8oz8gf",
         form.current,
-        'YOUR_PUBLIC_KEY'
+        "1H21uTkhIHaS-KyqI"
       )
       .then(
         (result) => {
-          console.log(result.text)
+          console.log(result.text);
         },
         (error) => {
-          console.log(error.text)
+          console.log(error.text);
         }
-      )
-  }
+      );
+  };
 
   return (
     <form
@@ -60,5 +60,5 @@ export const ContactForm = () => {
         className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
       />
     </form>
-  )
-}
+  );
+};
