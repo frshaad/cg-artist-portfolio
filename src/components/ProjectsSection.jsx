@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { FiArrowRight } from "react-icons/fi";
 import { MdOutlineLocalSee } from "react-icons/md";
 import { projects } from "../data/projects";
 import { ProjectsTitle } from "./ProjectsTitle";
@@ -30,7 +29,7 @@ export const ProjectsSection = () => {
       <div className='m-auto flex flex-col items-center justify-center p-4 md:p-10 lg:flex-row'>
         <div className='mb-2 max-w-6xl lg:mb-0'>
           <img
-            src={projects[activeProject].image}
+            src={projects[activeProject].indexImage}
             className='h-auto w-full rounded-xl drop-shadow-2xl'
             alt='Project Image'
           />
@@ -93,6 +92,15 @@ export const ProjectsSection = () => {
           <button className='close-modal' onClick={toggleModal}>
             X close
           </button>
+          <div>
+            <ul>
+              {projects[activeProject].images.map((image, index) => (
+                <li className='w-12'>
+                  <img src={image} alt='' />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </section>
