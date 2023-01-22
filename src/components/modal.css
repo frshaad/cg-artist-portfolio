@@ -1,0 +1,8 @@
+.image-gallery-image {
+  border-radius: 5px;
+  max-height: 400px;
+}
+
+img.image-gallery-image {
+  max-height: 680px !important;
+}

@@ -1,12 +1,20 @@
 import React, { useState } from "react";
+import { AiFillCloseCircle } from "react-icons/ai";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MdOutlineLocalSee } from "react-icons/md";
 import { projects } from "../data/projects";
+import "./modal.css";
 import { ProjectsTitle } from "./ProjectsTitle";
+
+// Image Gallery
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState(0);
   const [modal, setModal] = useState(false);
+
+  let projectsImages = projects[activeProject].images;
 
   const prevProject = () => {
     if (activeProject > 0) {
@@ -22,14 +30,23 @@ export const ProjectsSection = () => {
 
   const toggleModal = () => {
     setModal(!modal);
+    document.getElementById("projects").scrollIntoView();
+    if (modal) {
+      document.querySelector("body").style.overflow = "auto";
+    } else {
+      document.querySelector("body").style.overflow = "hidden";
+    }
   };
 
   return (
-    <section className='relative mb-32 w-screen bg-gray-50 dark:bg-black lg:flex lg:items-center'>
+    <section
+      id='projects'
+      className='relative h-screen w-screen bg-gray-50 dark:bg-black lg:flex lg:items-center'
+    >
       <div className='m-auto flex flex-col items-center justify-center p-4 md:p-10 lg:flex-row'>
         <div className='mb-2 max-w-6xl lg:mb-0'>
           <img
-            src={projects[activeProject].indexImage}
+            src={projects[activeProject].images[0].original}
             className='h-auto w-full rounded-xl drop-shadow-2xl'
             alt='Project Image'
           />
@@ -87,19 +104,30 @@ export const ProjectsSection = () => {
       {modal && (
         <div
           id='project-modal'
-          className='absolute top-0 left-0 h-full w-full bg-gray-50 dark:bg-black'
+          className='fixed top-0 left-0 flex h-screen w-full items-start bg-neutral-900 '
         >
-          <button className='close-modal' onClick={toggleModal}>
-            X close
+          <button
+            className='close-modal absolute right-1/2 top-10 hidden translate-x-1/2 text-6xl text-white lg:right-14 lg:top-14 lg:block   lg:translate-x-0'
+            onClick={toggleModal}
+          >
+            <AiFillCloseCircle />
           </button>
-          <div>
-            <ul>
-              {projects[activeProject].images.map((image, index) => (
-                <li className='w-12'>
-                  <img src={image} alt='' />
-                </li>
-              ))}
-            </ul>
+          <button
+            className='close-modal absolute right-16 bottom-14 translate-x-1/2 text-6xl text-white md:right-28 md:bottom-20 lg:hidden'
+            onClick={toggleModal}
+          >
+            <AiFillCloseCircle />
+          </button>
+
+          <div className='m-auto p-4 md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-6/12'>
+            <ImageGallery
+              items={projectsImages}
+              originalClass='modal-original-image'
+              thumbnailClass=''
+              originalAlt={projects[activeProject].name}
+              showPlayButton={false}
+              showFullscreenButton={false}
+            />
           </div>
         </div>
       )}
