@@ -1,6 +1,5 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { BiMailSend } from "react-icons/bi";
 
 export const ContactForm = () => {
   const emailJsServiceID = import.meta.env.VITE_EMAILJS_SERVICEID;
@@ -9,9 +8,6 @@ export const ContactForm = () => {
 
   const form = useRef();
   const submitBtn = document.getElementById("submit-btn");
-  // const userName = document.getElementById("user-name");
-  // const userEmail = document.getElementById("user-email");
-  // const userMessage = document.getElementById("user-message");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,11 +22,11 @@ export const ContactForm = () => {
       )
       .then(
         (result) => {
-          submitBtn.classList.add("text-green-700");
+          // submitBtn.classList.add("text-green-700");
           submitBtn.value = "Sent!";
           setTimeout(() => {
             submitBtn.value = "Send";
-            submitBtn.classList.remove("text-green-700");
+            // submitBtn.classList.remove("text-green-700");
           }, 10000);
         },
         (error) => {
@@ -81,7 +77,7 @@ export const ContactForm = () => {
         type='submit'
         value='Send'
         // className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
-        className='dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white'
+        className='dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white transition-all duration-300 ease-in-out'
       />
     </form>
   );

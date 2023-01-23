@@ -1,85 +1,128 @@
 import { AiOutlineCloudDownload, AiOutlineFileDone } from "react-icons/ai";
-import { HiOutlineSupport } from "react-icons/hi";
-import { MdWork } from "react-icons/md";
-import { skills } from "../data/skills";
-import { AboutBadges } from "./AboutBadges";
+import Tilt from "react-parallax-tilt";
+import "../index.css";
+import "./about.scss";
 
 export const About = () => {
   return (
-    <section className='mb-16 flex w-full flex-col-reverse bg-gray-50 py-6 pb-0 dark:bg-black xl:mb-0 xl:flex-row'>
-      <article className='flex w-full flex-col pt-8 md:pt-0 xl:w-1/2'>
-        <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
-          <p className='section-title mx-auto mb-12 w-fit'>skills</p>
-          <ul className='mx-auto mb-10 grid max-w-xl grid-cols-1 justify-items-center gap-4 md:grid-cols-2 2xl:px-16'>
-            {skills.map((skill, index) => (
-              <li
-                key={index}
-                className='flex h-12 w-56 items-center rounded-lg border-l-4 border-cyan-700 bg-white py-7 pl-1 text-gray-900 drop-shadow-md saturate-0 hover:scale-[1.02] hover:bg-[rgba(0,0,0,0.1)] hover:drop-shadow-xl hover:saturate-100 dark:border-cyan-500 dark:bg-gray-600  dark:text-gray-50 2xl:w-60'
-              >
-                <img src={skill.icon} alt='' className='h-auto w-12 p-1 ' />
-                <p className='cursor-default px-4 text-base font-normal leading-6 text-gray-800 dark:text-gray-300'>
-                  {skill.name}
-                </p>
-              </li>
-            ))}
-          </ul>
-
-          <div className='flex justify-center'>
-            <button className='primary-btn space-x-2shadow-none drop-shadow-lg hover:scale-[1.02] hover:drop-shadow-xl'>
-              <AiOutlineCloudDownload className='h-6 w-6' />{" "}
-              <span className='ml-2 text-base font-medium '>
-                Download Resumé
+    <section className='mt-24 lg:mt-32 2xl:mt-40'>
+      <div
+        id='about-wrapper'
+        className='mx-auto min-h-[680px] w-11/12 max-w-xl xl:max-w-4xl 2xl:max-w-6xl'
+      >
+        <div className='about-container'>
+          <Tilt
+            perspective={1000}
+            className='parallax-effect about-left about-box dark:bg-[#222]'
+          >
+            <div>
+              <img
+                id='about-index-icon'
+                src='../images/robot.png'
+                alt='skills icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-10 capitalize dark:text-[#eee]'>
+              superior software knowledge
+            </h3>
+            <p className='about-text mt-8 dark:text-[#ddd]'>
+              6+ years of experience in
+              <br />{" "}
+              <span className='font-semibold dark:text-[#ddd]'>
+                3D Visualization
               </span>
-            </button>
+            </p>
+            <p className='about-text mt-2 dark:text-[#ddd]'>
+              3+ years of experience in
+              <br />
+              <span className='font-semibold'>Rendering</span>
+            </p>
+
+            <a
+              href='/files/my-cv.jpg'
+              download='Mahdi-Bahmani-CV'
+              className='dark-shadow dark:light-shadow mx-auto mt-10 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white dark:bg-white dark:text-black'
+            >
+              <AiOutlineCloudDownload className='mr-2 text-lg' />
+              Download Resumé
+            </a>
+          </Tilt>
+
+          <div className='about-middle-top about-box dark:bg-[#222]'>
+            <div>
+              <img
+                src='../images/test-passed.png'
+                alt='projects icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-5 dark:text-[#eee]'>
+              20+ Completed Projects
+            </h3>
+            <p className='about-text mt-4 dark:text-[#ddd]'>
+              The last <span className='font-semibold'>4 years</span>
+              <br />
+              Along with experts
+            </p>
+          </div>
+
+          <div className='about-middle-bottom about-box dark:bg-[#222]'>
+            <div>
+              <img
+                src='../images/hard-working.png'
+                alt='hard working icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-5 dark:text-[#eee]'>Hard Working</h3>
+            <p className='about-text mt-4 dark:text-[#ddd]'>
+              Put forth all effort to achieve the{" "}
+              <span className='font-semibold'>best outcome</span>
+            </p>
+          </div>
+
+          <div className='about-right-top about-box dark:bg-[#222]'>
+            <div>
+              <img
+                src='../images/chat.png'
+                alt='chat icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-5 dark:text-[#eee]'>
+              Prompt Response
+            </h3>
+            <p className='about-text mt-4 dark:text-[#ddd]'>
+              I'll respond to you as quickly as I can and appropriately.
+            </p>
+          </div>
+
+          <div className='about-right-bottom about-box dark:bg-[#222]'>
+            <div>
+              <img
+                src='../images/design.png'
+                alt='education icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-5 dark:text-[#eee]'>
+              Architect and
+              <br />
+              CG Artist
+            </h3>
+            <p className='about-text mt-4 dark:text-[#ddd]'>
+              Graduate in Architectural Engineering from{" "}
+              <a
+                href='https://en.wikipedia.org/wiki/Babol_Noshirvani_University_of_Technology'
+                className='font-semibold'
+              >
+                BNUT
+              </a>
+            </p>
           </div>
         </div>
-
-        <div className='mx-auto w-full max-w-2xl p-6 text-gray-900 dark:text-gray-50 sm:px-10'>
-          <ul className='mx-auto grid grid-cols-1 justify-items-center gap-6 md:grid-cols-3 md:gap-2 '>
-            <AboutBadges
-              title='experience'
-              desc='3 years working'
-              icon={<MdWork />}
-            />
-            <AboutBadges
-              title='completed'
-              desc='20+ projects'
-              icon={<AiOutlineFileDone />}
-            />
-            <AboutBadges
-              title='support'
-              desc='prompt response'
-              icon={<HiOutlineSupport />}
-            />
-          </ul>
-        </div>
-      </article>
-
-      <article className='flex flex-col items-center justify-around p-2 xl:w-1/2 xl:py-14'>
-        <div className='flex justify-center lg:mb-8'>
-          <img
-            className='h-auto md:max-w-sm'
-            src='../images/about-mahdi.png'
-            alt='mahdi picture'
-          />
-        </div>
-        <div className='flex justify-center py-8 lg:py-0'>
-          <p className='w-11/12  text-lg font-light leading-9 dark:text-gray-200 md:w-4/5  lg:w-10/12'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            illum deserunt veniam enim voluptatem dolorem excepturi mollitia
-            incidunt quasi vitae exercitationem ex alias nam, dignissimos sed
-            totam neque aperiam voluptas{" "}
-            <a
-              href='https://rhizome.ir'
-              target='_blank'
-              className='font-semibold text-cyan-800 dark:text-cyan-500'
-            >
-              Rhizome Studio
-            </a>
-            .
-          </p>
-        </div>
-      </article>
+      </div>
     </section>
   );
 };

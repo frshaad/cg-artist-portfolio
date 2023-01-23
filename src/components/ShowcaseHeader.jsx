@@ -33,7 +33,7 @@ export const ShowcaseHeader = () => {
       <div className='flex items-center justify-center'>
         <a
           href='#contact'
-          className='dark-shadow mx-auto mr-6 hidden items-center rounded-lg bg-black px-8 py-2 text-center text-white md:block'
+          className='dark-shadow dark:light-shadow  mx-auto mr-6 hidden items-center rounded-lg bg-black px-8 py-2 text-center text-white dark:bg-white dark:text-black md:block'
         >
           Contact
         </a>
@@ -41,11 +41,11 @@ export const ShowcaseHeader = () => {
         <div className='switch ' data-isOn={isOn} onClick={toggleSwitch}>
           <motion.div className='handle' layout transition={spring}>
             {isOn ? (
-              <div className='hidden h-full w-full items-center justify-center text-gray-50  dark:flex '>
+              <div className='hidden h-full w-full items-center justify-center text-white  dark:flex '>
                 <MdOutlineLightMode />
               </div>
             ) : (
-              <div className='flex h-full w-full -rotate-45 items-center justify-center text-gray-900  dark:hidden'>
+              <div className='flex h-full w-full -rotate-45 items-center justify-center text-black  dark:hidden'>
                 <MdOutlineNightlight />
               </div>
             )}

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { ShowcaseContent } from "./ShowcaseContent";
-import { ShowcaseSlider } from "./ShowcaseSlider";
 
 export const Showcase = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,8 +15,7 @@ export const Showcase = () => {
   }
 
   return (
-    <section className='flex flex-col-reverse transition duration-300 dark:bg-black lg:max-h-screen lg:flex-row '>
-      {/* <ShowcaseSlider /> */}
+    <section className='flex w-full flex-col-reverse transition duration-300 dark:bg-black lg:flex-row 2xl:min-h-[900px] '>
       <ShowcaseContent />
     </section>
   );
