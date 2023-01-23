@@ -6,12 +6,11 @@ import { AboutBadges } from "./AboutBadges";
 
 export const About = () => {
   return (
-    <section className='mb-16 flex w-full flex-col-reverse bg-gray-50 py-6 pb-0 dark:bg-black lg:mb-0 lg:flex-row'>
-      <article className='flex w-full flex-col pt-8 md:pt-0 lg:w-1/2'>
+    <section className='mb-16 flex w-full flex-col-reverse bg-gray-50 py-6 pb-0 dark:bg-black xl:mb-0 xl:flex-row'>
+      <article className='flex w-full flex-col pt-8 md:pt-0 xl:w-1/2'>
         <div className='mx-auto w-full p-12 text-gray-900 dark:text-gray-50'>
-          <p className='section-title mb-12'>skills</p>
-          {/* <ul className='mb-10 flex flex-col items-center justify-center space-y-2 md:flex-row md:flex-wrap md:space-y-4'> */}
-          <ul className='mb-10 grid grid-cols-1 justify-items-center gap-4 px-12 md:grid-cols-2'>
+          <p className='section-title mx-auto mb-12 w-fit'>skills</p>
+          <ul className='mx-auto mb-10 grid max-w-xl grid-cols-1 justify-items-center gap-4 md:grid-cols-2 2xl:px-16'>
             {skills.map((skill, index) => (
               <li
                 key={index}
@@ -56,7 +55,7 @@ export const About = () => {
         </div>
       </article>
 
-      <article className='flex flex-col items-center justify-around p-2 lg:w-1/2 lg:py-14'>
+      <article className='flex flex-col items-center justify-around p-2 xl:w-1/2 xl:py-14'>
         <div className='flex justify-center lg:mb-8'>
           <img
             className='h-auto md:max-w-sm'

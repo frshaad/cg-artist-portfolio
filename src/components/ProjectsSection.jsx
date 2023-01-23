@@ -41,9 +41,9 @@ export const ProjectsSection = () => {
   return (
     <section
       id='projects'
-      className='relative h-screen w-screen bg-gray-50 dark:bg-black lg:flex lg:items-center'
+      className='relative h-screen w-screen bg-gray-50 dark:bg-black xl:flex xl:items-center'
     >
-      <div className='m-auto flex flex-col items-center justify-center p-4 md:p-10 lg:flex-row'>
+      <div className='m-auto flex flex-col items-center justify-center p-4 md:p-10 xl:flex-row'>
         <div className='mb-2 max-w-6xl lg:mb-0'>
           <img
             src={projects[activeProject].images[0].original}
@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
           />
         </div>
 
-        <div className='relative mx-auto flex h-fit w-full flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-2xl drop-shadow-2xl backdrop-blur-md md:-top-16 md:w-2/3 lg:top-0  lg:right-24  lg:max-w-sm lg:p-10'>
+        <div className='relative mx-auto flex h-fit w-full max-w-md flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-2xl drop-shadow-2xl backdrop-blur-md md:-top-16 lg:p-10 xl:top-0  xl:right-24  xl:w-2/3 xl:max-w-sm'>
           <ProjectsTitle />
           <div className='py-2'>
             <h6>Project</h6>
