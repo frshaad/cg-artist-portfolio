@@ -9,10 +9,10 @@ import { AboutBadges } from "./AboutBadges";
 
 export const AboutModern = () => {
   return (
-    <section className='mt-1'>
+    <section className=''>
       <div
         id='about-wrapper'
-        className='mx-auto min-h-[680px] w-3/4 max-w-full'
+        className='mx-auto min-h-[680px] w-10/12 max-w-2xl xl:max-w-5xl'
       >
         <div className='about-container'>
           <Tilt

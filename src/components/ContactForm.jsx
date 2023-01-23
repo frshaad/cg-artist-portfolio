@@ -80,7 +80,8 @@ export const ContactForm = () => {
         id='submit-btn'
         type='submit'
         value='Send'
-        className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
+        // className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
+        className='dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white'
       />
     </form>
   );

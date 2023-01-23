@@ -16,7 +16,7 @@ export const Showcase = () => {
   }
 
   return (
-    <section className='flex flex-col-reverse bg-gray-50 transition duration-300 dark:bg-black lg:max-h-screen lg:flex-row '>
+    <section className='flex flex-col-reverse transition duration-300 dark:bg-black lg:max-h-screen lg:flex-row '>
       {/* <ShowcaseSlider /> */}
       <ShowcaseContent />
     </section>

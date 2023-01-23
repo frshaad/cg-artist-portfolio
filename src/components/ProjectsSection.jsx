@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
   return (
     <section
       id='projects'
-      className='relative h-screen w-screen bg-gray-50 dark:bg-black xl:flex xl:items-center'
+      className='relative h-screen w-screen  dark:bg-black xl:flex xl:items-center'
     >
       <div className='m-auto flex flex-col items-center justify-center p-4 md:p-10 xl:flex-row'>
         <div className='mb-2 max-w-6xl lg:mb-0'>
@@ -83,10 +83,10 @@ export const ProjectsSection = () => {
           <div className='mb-4 flex '>
             <button
               onClick={toggleModal}
-              className='flex items-center font-semibold capitalize text-gray-700'
+              className='dark-shadow mb-6 mt-3 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white'
             >
-              <MdOutlineLocalSee className='mr-1 text-sm md:text-lg' />
-              see project
+              <MdOutlineLocalSee className='mr-2 text-lg' />
+              See Gallery
             </button>
           </div>
 

@@ -29,6 +29,13 @@
     grid-gap: 24px;
     gap: 24px;
   }
+
+  .about-middle-top,
+  .about-middle-bottom,
+  .about-right-top,
+  .about-right-bottom {
+    margin-top: 16px;
+  }
 }
 
 .about-left {
@@ -70,6 +77,9 @@
   padding-right: 30px;
   cursor: default;
   transition: all 0.2s ease-in-out;
+
+  @media (max-width: 600px) {
+  }
 
   &:hover {
     box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%),
