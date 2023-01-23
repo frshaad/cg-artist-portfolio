@@ -17,8 +17,7 @@
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.2.11",
     "react-parallax-tilt": "^1.7.90",
-    "react-router-dom": "^6.4.3",
-    "swiper": "^8.4.6"
+    "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
