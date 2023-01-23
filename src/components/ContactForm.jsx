@@ -22,11 +22,9 @@ export const ContactForm = () => {
       )
       .then(
         (result) => {
-          // submitBtn.classList.add("text-green-700");
           submitBtn.value = "Sent!";
           setTimeout(() => {
             submitBtn.value = "Send";
-            // submitBtn.classList.remove("text-green-700");
           }, 10000);
         },
         (error) => {
@@ -76,7 +74,6 @@ export const ContactForm = () => {
         id='submit-btn'
         type='submit'
         value='Send'
-        // className='mx-auto w-1/3 cursor-pointer pt-3 text-xl font-medium text-cyan-800 dark:text-cyan-500'
         className='dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white transition-all duration-300 ease-in-out'
       />
     </form>

@@ -41,7 +41,7 @@
   }
 
   .contact-input {
-    @apply relative w-full rounded-md  border-none bg-white py-3 px-6 text-sm font-normal text-gray-700 shadow-md outline-none placeholder:font-light placeholder:text-gray-400 focus:scale-[1.02] focus:shadow-xl focus:invalid:outline-2 dark:bg-black dark:text-white dark:placeholder:text-gray-300 md:text-base;
+    @apply relative w-full rounded-md  border-none bg-white py-3 px-6 text-sm font-normal text-gray-700 shadow-md outline-none transition-all duration-200 ease-in-out placeholder:font-light placeholder:text-gray-400 focus:scale-[1.02] focus:shadow-xl focus:invalid:outline-2 dark:bg-black dark:text-white dark:placeholder:text-gray-300 md:text-base;
   }
 }
 
