@@ -1,2 +1,2 @@
 # Architect and CG Artist Portfolio
-Portfolio website using React, TypeScript and Tailwind CSS
+Portfolio website using React and Tailwind CSS
