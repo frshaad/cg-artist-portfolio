@@ -49,17 +49,17 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+/* * {
   transition-duration: 300ms;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
-#social-btns * {
+/* #social-btns * {
   transition-duration: 50ms;
-}
+} */
 
 /* ? Start Dark/Light toggle button */
 .switch {
@@ -89,3 +89,19 @@ body {
   background-color: rgb(24, 24, 24);
 }
 /* ? End Dark/Light toggle button */
+
+.dark-shadow {
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 30%);
+  transition: all 0.2s ease-in-out;
+}
+.dark-shadow:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 30%);
+}
+
+.light-shadow {
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+}
+.light-shadow:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
+}
