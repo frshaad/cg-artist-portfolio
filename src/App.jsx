@@ -12,8 +12,7 @@ export const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      document.getElementById("loading-container").style.opacity = "0";
-    }, 3000);
+    }, 5000);
   }, []);
 
   return (

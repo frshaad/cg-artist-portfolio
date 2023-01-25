@@ -24,7 +24,7 @@ export const ShowcaseHeader = () => {
   };
 
   return (
-    <div className='font-sans mb-4 flex items-center justify-between'>
+    <div className='font-sans mb-4 flex items-center justify-between fade-down relative'>
       <p className='cursor-pointer text-base text-gray-800 dark:text-gray-50 md:text-lg'>
         <span className='font-bold'>Mahdi</span>
         <span className='font-extralight'>Bahmani</span>

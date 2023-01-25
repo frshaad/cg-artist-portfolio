@@ -43,7 +43,7 @@ export const Projects = () => {
       id='projects'
       className='relative mx-auto mt-48 w-11/12 dark:bg-black lg:mt-56 xl:flex xl:items-center 2xl:mt-64'
     >
-      <div className='m-auto flex flex-col items-center justify-center xl:flex-row'>
+      <div className=' m-auto flex flex-col items-center justify-center xl:flex-row'>
         <div className='mb-2 max-w-6xl lg:mb-0'>
           <img
             src={projects[activeProject].images[0].original}
