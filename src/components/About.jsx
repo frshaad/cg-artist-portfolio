@@ -76,7 +76,7 @@ export const About = () => {
             <div>
               <img
                 id='about-index-icon'
-                src='../images/robot.png'
+                src='../images/experience.png'
                 alt='skills icon'
                 className='about-icon'
               />
