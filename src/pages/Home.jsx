@@ -5,7 +5,7 @@ import { Showcase } from "../components/Showcase";
 
 export const Home = () => {
   return (
-    <div className=''>
+    <div>
       <Showcase />
       <About />
       <Projects />
