@@ -1,4 +1,4 @@
-import "./about.scss";
+import "../styles/about.scss";
 import { ContactForm } from "./ContactForm";
 import { ContactSocial } from "./ContactSocial";
 import { ContactTitle } from "./ContactTitle";

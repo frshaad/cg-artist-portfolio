@@ -3,7 +3,8 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MdOutlineLocalSee } from "react-icons/md";
 import { projects } from "../data/projects";
-import "./modal.css";
+import "../styles/modal.scss";
+import "../styles/projects.scss";
 import { ProjectsTitle } from "./ProjectsTitle";
 
 // Image Gallery
@@ -56,7 +57,7 @@ export const Projects = () => {
           <ProjectsTitle />
           <div className='py-2'>
             <h6>Project</h6>
-            <p className=' text-lg font-bold text-gray-700 dark:text-gray-800'>
+            <p className='text-lg font-bold text-gray-700 dark:text-gray-800'>
               {projects[activeProject].name}
             </p>
           </div>

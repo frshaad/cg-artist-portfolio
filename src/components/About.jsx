@@ -1,7 +1,7 @@
 import { AiOutlineCloudDownload, AiOutlineFileDone } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import "../index.css";
-import "./about.scss";
+import "../styles/about.scss";
 
 export const About = () => {
   return (

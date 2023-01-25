@@ -49,7 +49,7 @@ export const App = () => {
             <text
               x='50%'
               y='50%'
-              className='text-2xl font-display uppercase md:text-6xl xl:text-9xl'
+              className='text-2xl md:text-6xl xl:text-9xl'
               text-anchor='middle'
             >
               Mahdi Bahmani

@@ -1,0 +1,14 @@
+.project-text-reveal {
+  animation: text-reveal 1s ease-in;
+}
+
+@keyframes text-reveal {
+  0% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
