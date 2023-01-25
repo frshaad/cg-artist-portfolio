@@ -5,7 +5,7 @@ import "../styles/about.scss";
 
 export const About = () => {
   return (
-    <section className='mt-24 lg:mt-32 2xl:mt-40'>
+    <section className='mt-24 flex items-center lg:mt-32 xl:h-screen xl:snap-start 2xl:mt-40'>
       <div
         id='about-wrapper'
         className='mx-auto min-h-[680px] w-11/12 max-w-xl xl:max-w-4xl 2xl:max-w-6xl'
@@ -116,20 +116,31 @@ export const About = () => {
             </p>
           </div>
 
-          <div className='about-right-top about-box dark:bg-[#222]'>
-            <div>
-              <img
-                src='../images/chat.png'
-                alt='chat icon'
-                className='about-icon'
-              />
-            </div>
-            <h3 className='about-title mt-5 dark:text-[#eee]'>
-              Prompt Response
-            </h3>
-            <p className='about-text mt-4 dark:text-[#ddd]'>
-              I'll respond to you as quickly as I can and appropriately.
-            </p>
+          <div className='about-right-top about-box company-link dark:bg-[#222]'>
+            <a
+              href='https://rhizome.ir/'
+              target='_blank'
+              className='flex h-full w-full flex-col justify-center'
+            >
+              <div>
+                <img
+                  src='../images/company.png'
+                  alt='chat icon'
+                  className='about-icon base-image mx-auto'
+                />
+                <img
+                  src='../images/people.png'
+                  alt='chat icon'
+                  className='about-icon hover-image mx-auto'
+                />
+              </div>
+              <h3 className='about-text mt-5 dark:text-[#ddd]'>
+                Currently collaborating with a professional team in <br />
+                <span className='about-title dark:text-[#eee]'>
+                  Rhizome Studio
+                </span>
+              </h3>
+            </a>
           </div>
 
           <div className='about-right-bottom about-box dark:bg-[#222]'>

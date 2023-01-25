@@ -71,10 +71,7 @@
   box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%),
     0 12px 24px rgb(0 0 0 / 5%), 0px 0px 30px 0px rgba(21, 94, 117, 0) inset;
 
-  padding-top: 42px;
-  padding-bottom: 42px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 24px;
   cursor: default;
   transition: all 0.2s ease-in-out;
 
@@ -89,7 +86,7 @@
     transform: scale(1.03);
 
     .about-icon {
-      filter: saturate(1);
+      filter: saturate(0.7);
       transform: scale(1.1);
     }
 
@@ -101,7 +98,7 @@
 
 .about-icon {
   width: 68px;
-  filter: saturate(0.6);
+  filter: saturate(0);
   transition: all 0.2s ease-in-out;
 }
 
@@ -185,4 +182,18 @@
 .skill-8 {
   grid-area: skill-8;
   opacity: 0.4;
+}
+
+.hover-image {
+  display: none;
+}
+
+.company-link:hover {
+  .hover-image {
+    display: block;
+  }
+
+  .base-image {
+    display: none;
+  }
 }

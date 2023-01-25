@@ -42,65 +42,72 @@ export const Projects = () => {
   return (
     <section
       id='projects'
-      className='relative mx-auto mt-48 w-11/12 dark:bg-black lg:mt-56 xl:flex xl:items-center 2xl:mt-64'
+      className='relative mx-auto mt-48 flex h-screen w-11/12 justify-center dark:bg-black lg:mt-56 xl:flex xl:snap-start xl:items-center 2xl:mt-64'
     >
-      <div className=' m-auto flex flex-col items-center justify-center xl:flex-row'>
-        <div className='mb-2 max-w-6xl lg:mb-0'>
-          <img
-            src={projects[activeProject].images[0].original}
-            className='h-auto w-full rounded-xl drop-shadow-2xl'
-            alt='Project Image'
-          />
-        </div>
+      {projects.map((project, index) => (
+        <>
+          <div
+            key={projects[activeProject].id}
+            className='projects-slider absolute mx-auto flex flex-col items-center justify-center xl:flex-row'
+          >
+            <div className='mb-2 max-w-6xl lg:mb-0'>
+              <img
+                src={projects[activeProject].images[0].original}
+                className='h-auto w-full rounded-xl shadow-xl'
+                alt='Project Image'
+              />
+            </div>
 
-        <div className='relative mx-auto flex h-fit w-full max-w-md flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-2xl drop-shadow-2xl backdrop-blur-md md:-top-24 lg:p-10 xl:top-0  xl:right-24  xl:w-2/3 xl:max-w-sm'>
-          <ProjectsTitle />
-          <div className='py-2'>
-            <h6>Project</h6>
-            <p className='text-lg font-bold text-gray-700 dark:text-gray-800'>
-              {projects[activeProject].name}
-            </p>
-          </div>
-          <div className='py-2'>
-            <h6>Location</h6>
-            <p className=' text-lg font-bold text-gray-700 dark:text-gray-800'>
-              {projects[activeProject].location}
-            </p>
-          </div>
-          <div className='py-2'>
-            <h6>Year</h6>
-            <p className=' text-lg font-bold text-gray-700 dark:text-gray-800'>
-              {projects[activeProject].year}
-            </p>
-          </div>
-          <div className='mb-8 py-2'>
-            <p>
-              <span>as </span>
-              <span className='text-lg font-bold text-gray-700 dark:text-gray-800'>
-                {projects[activeProject].role}
-              </span>
-            </p>
-          </div>
-          <div className='mb-4 flex '>
-            <button
-              onClick={toggleModal}
-              className='dark-shadow mb-6 mt-3 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white'
-            >
-              <MdOutlineLocalSee className='mr-2 text-lg' />
-              See Gallery
-            </button>
-          </div>
+            <div className='relative mx-auto flex h-fit w-full max-w-md flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-xl backdrop-blur-md md:-top-24 lg:p-10 xl:top-0  xl:right-24  xl:w-2/3 xl:max-w-sm'>
+              <ProjectsTitle />
+              <div className='py-2'>
+                <h6>Project</h6>
+                <p className='text-reveal-one text-lg font-bold text-gray-700 dark:text-gray-800'>
+                  {projects[activeProject].name}
+                </p>
+              </div>
+              <div className='py-2'>
+                <h6>Location</h6>
+                <p className='text-reveal-two text-lg font-bold text-gray-700 dark:text-gray-800'>
+                  {projects[activeProject].location}
+                </p>
+              </div>
+              <div className='py-2'>
+                <h6>Year</h6>
+                <p className='text-reveal-three text-lg font-bold text-gray-700 dark:text-gray-800'>
+                  {projects[activeProject].year}
+                </p>
+              </div>
+              <div className='mb-8 py-2'>
+                <p>
+                  <span>as </span>
+                  <p className='text-reveal-four inline-block text-base font-bold text-gray-700 dark:text-gray-800'>
+                    {projects[activeProject].role}
+                  </p>
+                </p>
+              </div>
+              <div className='mb-4 flex '>
+                <button
+                  onClick={toggleModal}
+                  className='dark-shadow mb-6 mt-3 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white'
+                >
+                  <MdOutlineLocalSee className='mr-2 text-lg' />
+                  See Gallery
+                </button>
+              </div>
 
-          <div className='absolute -bottom-8 right-6 flex items-center justify-end space-x-1 md:space-x-3'>
-            <button onClick={prevProject} className='arrow-btn'>
-              <FaChevronLeft className='text-xl' />
-            </button>
-            <button onClick={nextProject} className='arrow-btn'>
-              <FaChevronRight className='text-xl' />
-            </button>
+              <div className='absolute -bottom-8 right-6 flex items-center justify-end space-x-1 md:space-x-3'>
+                <button onClick={prevProject} className='arrow-btn'>
+                  <FaChevronLeft className='text-xl' />
+                </button>
+                <button onClick={nextProject} className='arrow-btn'>
+                  <FaChevronRight className='text-xl' />
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      ))}
 
       {modal && (
         <div

@@ -1,14 +1,39 @@
-.project-text-reveal {
-  animation: text-reveal 1s ease-in;
+.projects-slider img {
+  animation: moveX 0.5s ease-in-out;
+  position: relative;
+}
+
+.text-reveal-one {
+  animation: text-reveal 0.3s ease-in-out;
+}
+.text-reveal-two {
+  animation: text-reveal 0.5s ease-in-out;
+}
+.text-reveal-three {
+  animation: text-reveal 0.7s ease-in-out;
+}
+.text-reveal-four {
+  animation: text-reveal 0.9s ease-in-out;
+}
+
+@keyframes moveX {
+  0% {
+    transform: scale(0.95) translateX(10px);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
 }
 
 @keyframes text-reveal {
   0% {
-    transform: translateX(10px);
-    opacity: 0;
+    transform: translateX(15px);
+    opacity: 0.7;
+    letter-spacing: 1px;
   }
   100% {
     transform: translateX(0px);
     opacity: 1;
+    letter-spacing: 0px;
   }
 }
