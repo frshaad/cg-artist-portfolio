@@ -26,6 +26,64 @@ export const About = () => {
             <h3 className='about-title mt-10 capitalize dark:text-[#eee]'>
               superior software knowledge
             </h3>
+
+            <div class='skills-container mt-10'>
+              <div class='skill-1'>
+                <p className='text-[#222] dark:text-[#ddd]'>3ds Max</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Advanced</p>
+              </div>
+              <div class='skill-2'>
+                <p className='text-[#222] dark:text-[#ddd]'>Corona</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Advanced</p>
+              </div>
+              <div class='skill-3'>
+                <p className='text-[#222] dark:text-[#ddd]'>V-Ray</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Intermediate</p>
+              </div>
+              <div class='skill-4'>
+                <p className='text-[#222] dark:text-[#ddd]'>Lumion</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Intermediate</p>
+              </div>
+              <div class='skill-5'>
+                <p className='text-[#222] dark:text-[#ddd]'>Autocad</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Intermediate</p>
+              </div>
+              <div class='skill-6'>
+                <p className='text-[#222] dark:text-[#ddd]'>Photoshop</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Intermediate</p>
+              </div>
+              <div class='skill-7'>
+                <p className='text-[#222] dark:text-[#ddd]'>Belender</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Basic</p>
+              </div>
+              <div class='skill-8'>
+                <p className='text-[#222] dark:text-[#ddd]'>Revit</p>
+                <p className='text-[#666] dark:text-[#aaa]'>Basic</p>
+              </div>
+            </div>
+
+            <a
+              href='/files/my-cv.jpg'
+              download='Mahdi-Bahmani-CV'
+              className='dark-shadow dark:light-shadow mx-auto mt-6 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white dark:bg-white dark:text-black'
+            >
+              <AiOutlineCloudDownload className='mr-2 text-lg' />
+              Download Resumé
+            </a>
+          </Tilt>
+
+          <div className='about-middle-top about-box dark:bg-[#222]'>
+            <div>
+              <img
+                id='about-index-icon'
+                src='../images/robot.png'
+                alt='skills icon'
+                className='about-icon'
+              />
+            </div>
+            <h3 className='about-title mt-10 capitalize dark:text-[#eee]'>
+              remarkable experience
+            </h3>
             <p className='about-text mt-8 dark:text-[#ddd]'>
               6+ years of experience in
               <br />{" "}
@@ -38,18 +96,9 @@ export const About = () => {
               <br />
               <span className='font-semibold'>Rendering</span>
             </p>
+          </div>
 
-            <a
-              href='/files/my-cv.jpg'
-              download='Mahdi-Bahmani-CV'
-              className='dark-shadow dark:light-shadow mx-auto mt-10 flex items-center rounded-lg bg-black px-8 py-3 text-center text-white dark:bg-white dark:text-black'
-            >
-              <AiOutlineCloudDownload className='mr-2 text-lg' />
-              Download Resumé
-            </a>
-          </Tilt>
-
-          <div className='about-middle-top about-box dark:bg-[#222]'>
+          <div className='about-middle-bottom about-box dark:bg-[#222]'>
             <div>
               <img
                 src='../images/test-passed.png'
@@ -64,21 +113,6 @@ export const About = () => {
               The last <span className='font-semibold'>4 years</span>
               <br />
               Along with experts
-            </p>
-          </div>
-
-          <div className='about-middle-bottom about-box dark:bg-[#222]'>
-            <div>
-              <img
-                src='../images/hard-working.png'
-                alt='hard working icon'
-                className='about-icon'
-              />
-            </div>
-            <h3 className='about-title mt-5 dark:text-[#eee]'>Hard Working</h3>
-            <p className='about-text mt-4 dark:text-[#ddd]'>
-              Put forth all effort to achieve the{" "}
-              <span className='font-semibold'>best outcome</span>
             </p>
           </div>
 

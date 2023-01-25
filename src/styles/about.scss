@@ -125,3 +125,64 @@
     transform: scale(1.1);
   }
 }
+
+// Skills
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 36px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "skill-1 skill-2"
+    "skill-3 skill-4"
+    "skill-5 skill-6"
+    "skill-7 skill-8";
+
+  div p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  div p:last-child {
+    font-size: 12px;
+  }
+}
+
+.skill-1 {
+  grid-area: skill-1;
+}
+
+.skill-2 {
+  grid-area: skill-2;
+}
+
+.skill-3 {
+  grid-area: skill-3;
+  opacity: 0.8;
+}
+
+.skill-4 {
+  grid-area: skill-4;
+  opacity: 0.8;
+}
+
+.skill-5 {
+  grid-area: skill-5;
+  opacity: 0.6;
+}
+
+.skill-6 {
+  grid-area: skill-6;
+  opacity: 0.6;
+}
+
+.skill-7 {
+  grid-area: skill-7;
+  opacity: 0.4;
+}
+
+.skill-8 {
+  grid-area: skill-8;
+  opacity: 0.4;
+}
