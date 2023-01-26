@@ -101,7 +101,7 @@ body {
   box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
 }
 
-#loading-container {
+/* #loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,11 +109,11 @@ body {
   height: 100vh;
 
   animation: fade-loading 5s ease-in-out;
-}
+} */
 
 .fade-loading {
   opacity: 0;
-  animation: fade-loading 6.5s ease-in-out 1.5s;
+  animation: fade-loading 5s ease-in-out 1.5s;
 }
 
 /* Animations */
