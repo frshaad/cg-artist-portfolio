@@ -42,8 +42,8 @@ export const Projects = () => {
       id='projects'
       className='relative mx-auto mt-48 flex h-screen w-full justify-center p-5 dark:bg-black md:p-10 lg:mt-56 lg:p-14 xl:flex xl:snap-start xl:items-center xl:p-20 2xl:mt-64'
     >
-      <div className='projects-slider mx-auto flex flex-col items-center justify-center xl:flex-row'>
-        <div className='img-placeholder mb-2 h-auto max-w-5xl rounded-xl lg:mb-0 '>
+      <div className='projects-slider mx-auto flex w-full flex-col items-center justify-center xl:flex-row'>
+        <div className='mb-2 h-auto max-w-5xl rounded-xl lg:mb-0 xl:w-[1050px] '>
           <img
             key={projects[activeProject].id}
             src={projects[activeProject].images[0].original}
