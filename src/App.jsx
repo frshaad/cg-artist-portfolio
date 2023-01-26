@@ -10,7 +10,7 @@ export const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 6500);
+    }, 8000);
   }, []);
 
   return (

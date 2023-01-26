@@ -103,7 +103,7 @@ body {
 
 .fade-loading {
   opacity: 0;
-  animation: fade-loading 5s ease-in-out 1.5s;
+  animation: fade-loading 6.5s ease-in-out 1.5s;
 }
 
 /* Animations */
