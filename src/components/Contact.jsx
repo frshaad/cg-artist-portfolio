@@ -21,7 +21,7 @@ export const Contact = () => {
         <div className='mb-2 w-11/12 max-w-lg lg:mb-0 xl:w-10/12'>
           <img
             src='../images/mahdi.jpg'
-            className='h-auto w-full rounded-xl shadow-lg drop-shadow-2xl saturate-[0.6] transition-all duration-300 ease-in-out hover:scale-[1.02] hover:saturate-[0.75]'
+            className='h-auto w-full rounded-xl shadow-lg drop-shadow-2xl saturate-0 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:saturate-[0.7]'
             alt='Mahdi Bahmani image'
           />
         </div>
