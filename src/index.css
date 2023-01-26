@@ -112,7 +112,7 @@ body {
 }
 
 .fade-loading {
-  animation: fade-loading 5s ease-in-out;
+  animation: fade-loading 8s ease-in-out;
 }
 
 /* Animations */

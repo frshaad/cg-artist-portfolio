@@ -42,10 +42,10 @@ export const Projects = () => {
   return (
     <section
       id='projects'
-      className='relative mx-auto mt-48 flex h-screen w-11/12 justify-center dark:bg-black lg:mt-56 xl:flex xl:snap-start xl:items-center 2xl:mt-64'
+      className='relative mx-auto mt-48 flex h-screen w-full justify-center p-5 dark:bg-black md:p-10 lg:mt-56 lg:p-14 xl:flex xl:snap-start xl:items-center xl:p-20 2xl:mt-64'
     >
       <div className='projects-slider mx-auto flex flex-col items-center justify-center xl:flex-row'>
-        <div className='mb-2 max-w-7xl lg:mb-0'>
+        <div className='img-placeholder mb-2 max-w-7xl rounded-xl lg:mb-0'>
           <img
             key={projects[activeProject].id}
             src={projects[activeProject].images[0].original}

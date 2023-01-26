@@ -11,7 +11,7 @@ svg text {
   font-weight: 700;
   stroke-width: 3;
 
-  animation: textAnimate 5s infinite alternate;
+  animation: textAnimate 8s infinite alternate;
 
   @media (max-width: 600px) {
     stroke-width: 2;
@@ -27,7 +27,7 @@ svg text {
 
   100% {
     stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
+    stroke-dashoffset: -20%;
     fill: hsla(189, 68%, 75%, 0%);
   }
 }

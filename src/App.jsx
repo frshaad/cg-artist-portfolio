@@ -10,7 +10,7 @@ export const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 8000);
   }, []);
 
   return (
@@ -52,7 +52,8 @@ export const App = () => {
               className='text-2xl md:text-6xl xl:text-9xl'
               text-anchor='middle'
             >
-              Mahdi Bahmani
+              {/* Mahdi Bahmani */}
+              MAHDI BAHMANI
             </text>
           </svg>
         </div>
