@@ -46,14 +46,12 @@ export const Projects = () => {
     >
       {projects.map((project, index) => (
         <>
-          <div
-            key={projects[activeProject].id}
-            className='projects-slider absolute mx-auto flex flex-col items-center justify-center xl:flex-row'
-          >
+          <div className='projects-slider absolute mx-auto flex flex-col items-center justify-center xl:flex-row'>
             <div className='mb-2 max-w-6xl lg:mb-0'>
               <img
+                key={projects[activeProject].id}
                 src={projects[activeProject].images[0].original}
-                className='h-auto w-full rounded-xl shadow-xl'
+                className='relative h-auto w-full rounded-xl shadow-xl'
                 alt='Project Image'
               />
             </div>
@@ -62,26 +60,38 @@ export const Projects = () => {
               <ProjectsTitle />
               <div className='py-2'>
                 <h6>Project</h6>
-                <p className='text-reveal-one text-lg font-bold text-gray-700 dark:text-gray-800'>
+                <p
+                  key={projects[activeProject].id}
+                  className='text-reveal-one text-lg font-bold capitalize text-gray-700 dark:text-gray-800'
+                >
                   {projects[activeProject].name}
                 </p>
               </div>
               <div className='py-2'>
                 <h6>Location</h6>
-                <p className='text-reveal-two text-lg font-bold text-gray-700 dark:text-gray-800'>
+                <p
+                  key={projects[activeProject].id}
+                  className='text-reveal-two text-lg font-bold capitalize text-gray-700 dark:text-gray-800'
+                >
                   {projects[activeProject].location}
                 </p>
               </div>
               <div className='py-2'>
                 <h6>Year</h6>
-                <p className='text-reveal-three text-lg font-bold text-gray-700 dark:text-gray-800'>
+                <p
+                  key={projects[activeProject].id}
+                  className='text-reveal-three text-lg font-bold text-gray-700 dark:text-gray-800'
+                >
                   {projects[activeProject].year}
                 </p>
               </div>
               <div className='mb-8 py-2'>
                 <p>
                   <span>as </span>
-                  <p className='text-reveal-four inline-block text-base font-bold text-gray-700 dark:text-gray-800'>
+                  <p
+                    key={projects[activeProject].id}
+                    className='text-reveal-four inline-block text-base font-bold text-gray-700 dark:text-gray-800'
+                  >
                     {projects[activeProject].role}
                   </p>
                 </p>
