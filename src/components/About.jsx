@@ -1,4 +1,4 @@
-import { AiOutlineCloudDownload, AiOutlineFileDone } from "react-icons/ai";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import "../index.css";
 import "../styles/about.scss";
@@ -86,7 +86,7 @@ export const About = () => {
             </h3>
             <p className='about-text mt-8 dark:text-[#ddd]'>
               6+ years of experience in
-              <br />{" "}
+              <br />
               <span className='font-semibold dark:text-[#ddd]'>
                 3D Visualization
               </span>

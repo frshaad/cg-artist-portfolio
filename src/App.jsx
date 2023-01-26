@@ -26,14 +26,7 @@ export const App = () => {
                 width='100'
                 height='100'
                 patternUnits='userSpaceOnUse'
-              >
-                {/* <circle
-                  fill='rgba(14, 116, 144, 0.2)'
-                  cx='25'
-                  cy='25'
-                  r='3'
-                ></circle> */}
-              </pattern>
+              ></pattern>
             </defs>
 
             <rect
@@ -52,7 +45,6 @@ export const App = () => {
               className='text-2xl md:text-6xl xl:text-9xl'
               text-anchor='middle'
             >
-              {/* Mahdi Bahmani */}
               MAHDI BAHMANI
             </text>
           </svg>

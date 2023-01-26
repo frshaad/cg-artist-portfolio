@@ -101,16 +101,6 @@ body {
   box-shadow: 0 6px 20px rgb(0 0 0 / 15%);
 }
 
-/* #loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-
-  animation: fade-loading 5s ease-in-out;
-} */
-
 .fade-loading {
   opacity: 0;
   animation: fade-loading 5s ease-in-out 1.5s;
@@ -141,7 +131,6 @@ body {
   }
   40% {
     opacity: 1;
-    /* transform: scale(1.2); */
   }
   95% {
     opacity: 1;

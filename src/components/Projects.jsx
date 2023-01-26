@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { MdOutlineLocalSee } from "react-icons/md";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 import { projects } from "../data/projects";
 import "../styles/modal.scss";
 import "../styles/projects.scss";
 import { ProjectsTitle } from "./ProjectsTitle";
-
-// Image Gallery
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
 
 export const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
