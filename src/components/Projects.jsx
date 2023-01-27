@@ -14,15 +14,16 @@ export const Projects = () => {
   const [modal, setModal] = useState(false);
 
   let projectsImages = projects[activeProject].images;
+  const projectsCount = projects.length;
 
   const prevProject = () => {
     if (activeProject > 0) {
       setActiveProject(activeProject - 1);
-    } else setActiveProject(projects.length - 1);
+    } else setActiveProject(projectsCount - 1);
   };
 
   const nextProject = () => {
-    if (activeProject < projects.length - 1) {
+    if (activeProject < projectsCount - 1) {
       setActiveProject(activeProject + 1);
     } else setActiveProject(0);
   };
@@ -43,7 +44,7 @@ export const Projects = () => {
       className='relative mx-auto mt-48 flex h-screen w-full justify-center p-5 dark:bg-black md:p-10 lg:mt-56 lg:p-14 xl:flex xl:snap-start xl:items-center xl:p-20 2xl:mt-64'
     >
       <div className='projects-slider mx-auto flex w-full flex-col items-center justify-center xl:flex-row'>
-        <div className='relative mb-2 h-auto rounded-xl lg:mb-0 '>
+        <div className='relative mb-2 h-auto w-full rounded-xl lg:mb-0 xl:w-10/12 xl:max-w-5xl 2xl:max-w-6xl '>
           <img
             key={projects[activeProject].id}
             src={projects[activeProject].images[0].original}
