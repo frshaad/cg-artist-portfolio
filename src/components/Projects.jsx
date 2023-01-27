@@ -44,7 +44,7 @@ export const Projects = () => {
       className='relative mx-auto mt-48 flex h-screen w-full justify-center p-5 dark:bg-black md:p-10 lg:mt-56 lg:p-14 xl:flex xl:snap-start xl:items-center xl:p-20 2xl:mt-64'
     >
       <div className='projects-slider mx-auto flex w-full flex-col items-center justify-center xl:flex-row'>
-        <div className='relative mb-2 h-auto w-full rounded-xl lg:mb-0 xl:w-10/12 xl:max-w-5xl 2xl:max-w-6xl '>
+        <div className='relative mb-2 h-full w-full rounded-xl lg:mb-0 xl:h-auto xl:w-10/12 xl:max-w-5xl 2xl:max-w-6xl '>
           <img
             key={projects[activeProject].id}
             src={projects[activeProject].images[0].original}
@@ -52,41 +52,41 @@ export const Projects = () => {
             alt='Project Image'
           />
 
-          <div className='relative mx-auto flex h-fit w-full max-w-sm flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-xl backdrop-blur-md  md:-top-24 xl:absolute xl:-right-24 xl:top-1/2 xl:-translate-y-1/2'>
+          <div className='relative top-3 mx-auto flex h-fit w-full max-w-sm flex-col rounded-xl bg-[rgb(255,255,255,0.5)] px-10 py-4 capitalize shadow-xl backdrop-blur-md  md:-top-24 xl:absolute xl:-right-24 xl:top-1/2 xl:-translate-y-1/2'>
             <ProjectsTitle />
             <div className='py-2'>
-              <h6>Project</h6>
+              <p className='text-sm xl:text-base'>Project</p>
               <p
                 key={projects[activeProject].id}
-                className='text-reveal-one text-lg font-bold capitalize text-gray-700 dark:text-gray-800'
+                className='text-reveal-one text-base font-bold capitalize text-gray-700 dark:text-gray-800 md:text-lg'
               >
                 {projects[activeProject].name}
               </p>
             </div>
             <div className='py-2'>
-              <h6>Location</h6>
+              <p className='text-sm xl:text-base'>Location</p>
               <p
                 key={projects[activeProject].id}
-                className='text-reveal-two text-lg font-bold capitalize text-gray-700 dark:text-gray-800'
+                className='text-reveal-two text-base font-bold capitalize text-gray-700 dark:text-gray-800 md:text-lg'
               >
                 {projects[activeProject].location}
               </p>
             </div>
             <div className='py-2'>
-              <h6>Year</h6>
+              <p className='text-sm xl:text-base'>Year</p>
               <p
                 key={projects[activeProject].id}
-                className='text-reveal-three text-lg font-bold text-gray-700 dark:text-gray-800'
+                className='text-reveal-three text-base font-bold text-gray-700 dark:text-gray-800 md:text-lg'
               >
                 {projects[activeProject].year}
               </p>
             </div>
             <div className='mb-8 py-2'>
               <p>
-                <span>as </span>
+                <span className='text-sm xl:text-base'>as </span>
                 <p
                   key={projects[activeProject].id}
-                  className='text-reveal-four inline-block text-base font-bold text-gray-700 dark:text-gray-800'
+                  className='text-reveal-four inline-block text-sm font-bold text-gray-700 dark:text-gray-800 md:text-base'
                 >
                   {projects[activeProject].role}
                 </p>
