@@ -76,15 +76,15 @@ export const About = () => {
             <div>
               <img
                 id='about-index-icon'
-                src='../images/experience.png'
-                alt='skills icon'
+                src='../images/test-passed.png'
+                alt='experience icon'
                 className='about-icon'
               />
             </div>
-            <h3 className='about-title mt-10 capitalize dark:text-[#eee]'>
+            <h3 className='about-title mt-5 capitalize dark:text-[#eee]'>
               remarkable experience
             </h3>
-            <p className='about-text mt-8 dark:text-[#ddd]'>
+            <p className='about-text mt-4 dark:text-[#ddd]'>
               6+ years of experience in
               <br />
               <span className='font-semibold dark:text-[#ddd]'>
@@ -101,7 +101,7 @@ export const About = () => {
           <div className='about-middle-bottom about-box dark:bg-[#222]'>
             <div>
               <img
-                src='../images/test-passed.png'
+                src='../images/done.png'
                 alt='projects icon'
                 className='about-icon'
               />
@@ -122,15 +122,15 @@ export const About = () => {
               target='_blank'
               className='flex h-full w-full flex-col justify-center'
             >
-              <div>
+              <div className='flex h-24 items-center'>
                 <img
-                  src='../images/company.png'
-                  alt='chat icon'
+                  src='../images/rhizome-logo.png'
+                  alt='rhizome logo'
                   className='about-icon base-image mx-auto'
                 />
                 <img
-                  src='../images/people.png'
-                  alt='chat icon'
+                  src='../images/rhizome-text.png'
+                  alt='rhizome text logo'
                   className='about-icon hover-image mx-auto'
                 />
               </div>
