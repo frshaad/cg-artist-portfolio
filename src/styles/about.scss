@@ -75,7 +75,8 @@
   cursor: default;
   transition: all 0.2s ease-in-out;
 
-  @media (max-width: 600px) {
+  @media (min-width: 1280px) {
+    padding: 29px;
   }
 
   &:hover {
