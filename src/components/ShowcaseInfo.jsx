@@ -5,15 +5,11 @@ import "../styles/word-animation.scss";
 export const ShowcaseInfo = () => {
   return (
     <div className='relative mx-auto flex w-full flex-col'>
-      {/* <p className='select-none text-center text-lg font-light text-gray-700 dark:text-gray-300 md:text-xl'>
-        Hi there! <span className='font-medium'>I am Mahdi Bahmani</span>
-      </p> */}
-
       <p className='select-none text-center text-lg font-light text-gray-700 dark:text-gray-300 md:text-xl'>
         Hi there!{" "}
-        <span className='font-normal inline-block'>
+        <span className='inline-block font-normal'>
           I am{" "}
-          <section class='animation font-semibold inline-block'>
+          <section class='animation inline-block font-semibold'>
             <div class='first'>
               <p>Mahdi Bahmani</p>
             </div>
