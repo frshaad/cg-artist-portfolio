@@ -16,34 +16,34 @@ export const App = () => {
   return (
     <DarkModeProvider>
       {loading ? (
-        <div class='patterns fade-loading'>
-          <svg width='100%' height='100%'>
+        <div class="patterns fade-loading">
+          <svg width="100%" height="100%">
             <defs>
               <pattern
-                id='polka-dots'
-                x='0'
-                y='0'
-                width='100'
-                height='100'
-                patternUnits='userSpaceOnUse'
+                id="polka-dots"
+                x="0"
+                y="0"
+                width="100"
+                height="100"
+                patternUnits="userSpaceOnUse"
               ></pattern>
             </defs>
 
             <rect
-              x='0'
-              y='0'
-              width='100%'
-              height='100%'
-              fill='url(#polka-dots)'
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              fill="url(#polka-dots)"
             >
               {" "}
             </rect>
 
             <text
-              x='50%'
-              y='50%'
-              className='text-2xl md:text-6xl xl:text-9xl'
-              text-anchor='middle'
+              x="50%"
+              y="50%"
+              className="text-2xl md:text-6xl xl:text-9xl"
+              text-anchor="middle"
             >
               MAHDI BAHMANI
             </text>

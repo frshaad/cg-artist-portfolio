@@ -68,8 +68,11 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%),
-    0 12px 24px rgb(0 0 0 / 5%), 0px 0px 30px 0px rgba(21, 94, 117, 0) inset;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 7%),
+    0 2px 4px rgb(0 0 0 / 5%),
+    0 12px 24px rgb(0 0 0 / 5%),
+    0px 0px 30px 0px rgba(21, 94, 117, 0) inset;
 
   padding: 24px;
   cursor: default;
@@ -80,7 +83,9 @@
   }
 
   &:hover {
-    box-shadow: 0 0 0 1px rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%),
+    box-shadow:
+      0 0 0 1px rgb(0 0 0 / 7%),
+      0 2px 4px rgb(0 0 0 / 5%),
       0 12px 24px rgb(0 0 0 / 5%),
       0px 0px 30px 0px rgba(21, 94, 117, 0.05) inset;
 

@@ -11,7 +11,9 @@
 }
 
 .word {
-  animation: show 0.01s forwards, pop-word 1.5s forwards;
+  animation:
+    show 0.01s forwards,
+    pop-word 1.5s forwards;
   animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
   opacity: 0;
 

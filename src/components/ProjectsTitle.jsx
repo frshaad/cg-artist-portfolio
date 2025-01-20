@@ -1,6 +1,6 @@
 export const ProjectsTitle = () => {
   return (
-    <p className='relative -top-14 mx-auto w-fit rounded-lg bg-gray-200 px-6 py-4 text-center font-title text-lg uppercase text-cyan-800 drop-shadow-xl dark:bg-[#222] dark:brightness-200 md:px-10 md:text-3xl'>
+    <p className="relative -top-14 mx-auto w-fit rounded-lg bg-gray-200 px-6 py-4 text-center font-title text-lg uppercase text-cyan-800 drop-shadow-xl dark:bg-[#222] dark:brightness-200 md:px-10 md:text-3xl">
       Projects
     </p>
   );

@@ -42,39 +42,39 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className='grid grid-cols-1 justify-items-center gap-5'
+      className="grid grid-cols-1 justify-items-center gap-5"
     >
       <input
-        id='user-name'
-        type='text'
-        name='user_name'
+        id="user-name"
+        type="text"
+        name="user_name"
         placeholder="What's your name?"
         required
-        className='contact-input'
+        className="contact-input"
       />
 
       <input
-        id='user-email'
-        type='email'
-        name='user_email'
-        placeholder='Enter your email'
+        id="user-email"
+        type="email"
+        name="user_email"
+        placeholder="Enter your email"
         required
-        className='contact-input'
+        className="contact-input"
       />
 
       <textarea
-        id='user-meassage'
-        name='message'
-        placeholder='Write down the message...'
+        id="user-meassage"
+        name="message"
+        placeholder="Write down the message..."
         required
-        rows='3'
-        className='contact-input'
+        rows="3"
+        className="contact-input"
       />
       <input
-        id='submit-btn'
-        type='submit'
-        value='Send'
-        className='dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white transition-all duration-300 ease-in-out'
+        id="submit-btn"
+        type="submit"
+        value="Send"
+        className="dark-shadow mx-auto mt-3 flex cursor-pointer items-center rounded-lg bg-black px-8 py-3 text-center text-white transition-all duration-300 ease-in-out"
       />
     </form>
   );
